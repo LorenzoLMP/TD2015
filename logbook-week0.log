@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  29 SEP 2015 09:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  29 SEP 2015 15:36
 entering extended mode
 **logbook-week0.tex
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week0.tex
@@ -811,6 +811,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\preprint\authblk.sty"
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip59
+\@affilsep=\skip60
+\c@Maxaffil=\count157
+\c@authors=\count158
+\c@affil=\count159
+)
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week0.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
 LaTeX Font Info:    ... okay on input line 134.
@@ -916,31 +924,34 @@ g"
 File: siunitx-abbreviations.cfg 2013/03/11 v2.5q siunitx: Abbreviated units
 ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count157
+\scratchcounter=\count160
 \scratchdimen=\dimen187
 \scratchbox=\box51
-\nofMPsegments=\count158
-\nofMParguments=\count159
+\nofMPsegments=\count161
+\nofMParguments=\count162
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count160
+\MPscratchCnt=\count163
 \MPscratchDim=\dimen188
-\MPnumerator=\count161
-\makeMPintoPDFobject=\count162
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
 \everyMPtoPDFconversion=\toks25
 )
-\c__siunitx_mathsf_int=\count163
-\c__siunitx_mathtt_int=\count164
+\c__siunitx_mathsf_int=\count166
+\c__siunitx_mathtt_int=\count167
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 143.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 143.
 
-** WARNING: \and is valid only when in conference or peerreviewca
-modes (line 141).
-** ATTENTION: \PARstart is deprecated (line 151). Use \IEEEPARstart instead.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+** ATTENTION: \PARstart is deprecated (line 153). Use \IEEEPARstart instead.
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
@@ -952,11 +963,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 ]
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week0.aux) ) 
 Here is how much of TeX's memory you used:
- 11509 strings out of 493921
- 244249 string characters out of 3147266
- 246026 words of memory out of 3000000
- 14658 multiletter control sequences out of 15000+200000
- 46854 words of font info for 92 fonts, out of 3000000 for 9000
+ 11640 strings out of 493921
+ 245950 string characters out of 3147266
+ 246743 words of memory out of 3000000
+ 14779 multiletter control sequences out of 15000+200000
+ 51021 words of font info for 104 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  38i,9n,30p,511b,513s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program File
@@ -968,12 +979,13 @@ cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logbook-week0.pdf (2 pages, 127043 bytes).
+9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on logbook-week0.pdf (2 pages, 135798 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

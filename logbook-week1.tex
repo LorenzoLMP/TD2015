@@ -22,23 +22,22 @@
 \usepackage{caption}
 \usepackage{tikz}
 \usepackage{circuitikz}
+\usepackage{authblk}
+
 
 \begin{document}
 
 % Define document title and author
 	\title{Tecnologie Digitali - Logbook Week 1}
-	\author{
-	  LastName1, FirstName1\\
-	  \texttt{first1.last1@xxxxx.com}
-	  \and
-	  LastName2, FirstName2\\
-	  \texttt{first2.last2@xxxxx.com}
-	}
+	\author[1]{Salvatore Bottaro}
+		\author[2]{Lorenzo M. Perrone}
+		\affil[1]{\texttt{email@sa.com}}
+		\affil[2]{\texttt{lorenzo.perrone.lmp@gmail.com}}
 	\markboth{Tecnologie Digitali - Di Lieto}{}
 	\maketitle
 	
 \begin{abstract}
-	Riassunto di quanto svolto nel Laboratorio di Tecnologie Digitali nei giorni 23-24/09/2015.
+	Logbook di laboratorio di Tecnologie Digitali, a.a. 2015/2016. Week 1.
 \end{abstract}
 
 \section{Lezione 28/09/2015}
@@ -71,12 +70,21 @@ Il circuito è stato realizzato sulla breadboard come nell'immagine:
 \caption{Circuito su breadboard realizzato in laboratorio}
 \end{figure}
 
-Sono state scelte resistenze $R_1 = 22 ~ k\Omega \pm 10 \%$ e $R_2 = 220~ k\Omega \pm 10 \%$, scelte in modo da garantire che la corrente nel circuito fosse dell'ordine del mA (DECINA DI MICROAMPERE). Il cavo per la terra è stato collegato alla CB29 della \textit{scheda verde}, il cavo in $V_{in}$ alla CB22, analog output 0 della scheda di acquisizione, mentre il cavo in $V_{out}$ alla CB68, analog input 0 della scheda. Abbiamo scelto $V_{in} = 2.75 V$, dopodiché prima di collegare la breadboard alla scheda abbiamo verificato il corretto funzionamento della scheda collegando il CB22 al CB68 e avviando il VI. Il valore restituito è stato $V_{out} = 2.74.. V \pm 0.00.. V$ che garantisce il corretto funzionamento della scheda. Abbiamo infine collegato la scheda al circuito e avviato il VI. Il valore atteso si ottiene da:
+Sono state scelte resistenze $R_1 = 22 ~ k\Omega \pm 10 \%$ e $R_2 = 220~ k\Omega \pm 10 \%$, scelte in modo da garantire che la corrente nel circuito fosse dell'ordine del $\mu$A. Il cavo per la terra è stato collegato alla CB29 della \textit{scheda verde}, il cavo in $V_{in}$ alla CB22, analog output 0 della scheda di acquisizione, mentre il cavo in $V_{out}$ alla CB68, analog input 0 della scheda. Abbiamo scelto $V_{in} = 2.75 V$, dopodiché prima di collegare la breadboard alla scheda abbiamo verificato il corretto funzionamento della scheda collegando il CB22 al CB68 e avviando il VI. Il valore restituito è stato $V_{out} = 2.749 V \pm 0.001 V$ che garantisce il corretto funzionamento della scheda. Abbiamo infine collegato la scheda al circuito e avviato il VI. Il valore atteso si ottiene da:
 \begin{equation}
 V_{out}^{att}= \frac{V_{in}}{1+\frac{R_1}{R_2}}
 \end{equation}
 da cui, per la scelta delle resistenze, $V_{out}^{att} = 2.5 V \pm 20 \%$. Il valore registrato è stato $V_{out} = 2.502 V \pm 0.002 V$. Abbiamo scambiato il cavo per la CB29 con quello della CB22, scambiando così i ruoli delle resistenze. In tal caso si ha $V_{out}^{att} = 0.25~ V \pm 20 \%$ mentre quello registrato $V_{out} = 0.244 ~V \pm 0.001 ~V$.
 
+\section{Lezione 29/09/2015}
+Durante la lezione odierna, abbiamo iniziato a lavorare con il software TINA, un simulatore analogico SPICE-Based prodotto dalla \textit{Texas Instruments}. Tramite TINA è possibile analizzare il comportamento di circuiti più o meno complessi, potendo inserire numerosi componenti circuitali di cui settare i valori. \\
+In primo luogo è stato riprodotto il circuito impiegato nella lezione precedente e analizzato in continua per verificare che i valori da noi trovati fossero compatibili con quelli teorici previsti da TINA, usando la funzione \textsc{dc transfer characteristic}.
+Quindi, abbiamo spostato la nostra attenzione sui circuiti in alternata (vedi Figura ASSAAAA), per i quali è possibile determinare una \textit{funzione di trasferimento} $V_{out} = f(V_{in})$, dove $V_{in}$ è la tensione (alternata) fornita in ingresso, e $V_{out}$ quella in uscita.
+I circuiti che esamineremo prevalentemente saranno di tipo \textit{lineare}, dove è possibile stabilire una relazione fra $V_{in}$ e $V_{out}$ come segue:
+
+\begin{equation}
+V_{out}(\omega)= H(\omega)V_{in}(\omega)
+\end{equation}
 
 \section{Conclusion}
 	This section summarizes the paper.

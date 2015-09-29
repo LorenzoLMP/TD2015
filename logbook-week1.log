@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  29 SEP 2015 09:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  29 SEP 2015 22:54
 entering extended mode
 **logbook-week1.tex
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.tex
@@ -1155,26 +1155,34 @@ File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 \pgf@circ@res@step=\dimen306
 \pgfstartlinewidth=\dimen307
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\preprint\authblk.sty"
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip59
+\@affilsep=\skip60
+\c@Maxaffil=\count178
+\c@authors=\count179
+\c@affil=\count180
+)
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 28.
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\lgrcmr.fd"
 File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
 )
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    ... okay on input line 28.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
@@ -1259,37 +1267,35 @@ g"
 File: siunitx-abbreviations.cfg 2013/03/11 v2.5q siunitx: Abbreviated units
 ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count178
+\scratchcounter=\count181
 \scratchdimen=\dimen308
 \scratchbox=\box60
-\nofMPsegments=\count179
-\nofMParguments=\count180
+\nofMPsegments=\count182
+\nofMParguments=\count183
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count181
+\MPscratchCnt=\count184
 \MPscratchDim=\dimen309
-\MPnumerator=\count182
-\makeMPintoPDFobject=\count183
+\MPnumerator=\count185
+\makeMPintoPDFobject=\count186
 \everyMPtoPDFconversion=\toks34
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-\c__siunitx_mathsf_int=\count184
-\c__siunitx_mathtt_int=\count185
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 38.
+\c__siunitx_mathsf_int=\count187
+\c__siunitx_mathtt_int=\count188
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 37.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-** WARNING: \and is valid only when in conference or peerreviewca
-modes (line 38).
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 
-Underfull \hbox (badness 6910) in paragraph at lines 59--73
+Underfull \hbox (badness 6910) in paragraph at lines 58--72
 \OT1/ptm/m/n/10 Il cir-cui-to []e sta-to rea-liz-za-to sul-la bread-board co-me
 
  []
@@ -1300,13 +1306,13 @@ Underfull \hbox (badness 6910) in paragraph at lines 59--73
 ]
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.aux) ) 
 Here is how much of TeX's memory you used:
- 25330 strings out of 493921
- 565808 string characters out of 3147266
- 609158 words of memory out of 3000000
- 28223 multiletter control sequences out of 15000+200000
- 42393 words of font info for 88 fonts, out of 3000000 for 9000
+ 25427 strings out of 493921
+ 567022 string characters out of 3147266
+ 611907 words of memory out of 3000000
+ 28315 multiletter control sequences out of 15000+200000
+ 46045 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,6n,55p,869b,638s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,8n,55p,847b,638s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program File
 s/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
@@ -1318,7 +1324,7 @@ am Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logbook-week1.pdf (1 page, 115996 bytes).
+Output written on logbook-week1.pdf (1 page, 118821 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
