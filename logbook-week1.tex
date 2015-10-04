@@ -89,19 +89,22 @@ V_{out}(\omega)= H(\omega)V_{in}(\omega)
 
 
 \section{Lezione 30/09/2015}
-Proseguendo il discorso avviato durante la lezione precedente, tramite un VI apposito (NOME VI), si è analizzato l'andamento della funzione di trasferimento attraverso un diagramma di Bode per un circuito strutturato come segue (e realizzato sulla \textit{Breadboard}):
+Proseguendo il discorso avviato durante la lezione precedente, tramite un VI apposito (NOME VI), si è analizzato l'andamento della funzione di trasferimento attraverso un diagramma di Bode per un circuito strutturato come segue (e realizzato sulla \textit{Breadboard}):\\
 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{./breadboard1_passabasso}
+\includegraphics[width=0.9\linewidth]{./breadboard1_passabasso}
 \caption{Circuito passa basso realizzato sulla breadboard.}
 \label{fig:breadboard_1}
 \end{figure}
 
 
-Resistenza: $22 k\Omega \pm 5 $ \% tolleranza.
-Condensatore: $68\si{nF}$, con permittività 10, di polipropilene.
+\begin{itemize}
+\item Resistenza: $22 k\Omega \pm 5 $ \% tolleranza.
+\item Condensatore: $68\si{nF}$, con permittività 10, di polipropilene.\\
+\end{itemize}
+
 
 Per questo circuito è prevista una frequenza di taglio di $f_T =\frac{1}{2\pi RC} = 106.4 \si{Hz}$.
 
@@ -221,7 +224,145 @@ Poichè si tratta di una composizione di due filtri, lo sfasamento risulta esser
 
 
 Si può notare dalla figura (\ref{fig:passabanda_sfasa_octave}) acquisita con il \textit{VI}, che la regione in cui il guadagno è alto risulta piuttosto ampia, con frequenze appartenenti all'intervallo $80-800 \si{Hz}$. In altre parole, la larghezza del picco è grande. \\
-Inoltre, per basse frequenze notiamo dei punti sperimentali sensibilmente scostati dalla spezzata prodotta dai restanti campionamenti. Per altre frequenze,invece, si evidenzia un buon accordo con l'andamento simulato con \textsc{Tina}. 
+Inoltre, per basse frequenze notiamo dei punti sperimentali sensibilmente scostati dalla spezzata prodotta dai restanti campionamenti. Per altre frequenze,invece, si evidenzia un buon accordo con l'andamento simulato con \textsc{Tina} riportato in Figura (\ref{fig:passabanda_sfasa_tina}). 
+
+\begin{figure}
+\centering
+\includegraphics[width=1.1\linewidth]{./passabanda_sfasa_tina}
+\caption{Grafico dell'attenuazione e dello sfasamento simulato da TINA per il circuito realizzato sulla breadboard}
+\label{fig:passabanda_sfasa_tina}
+\end{figure}
+
+
+\section{Circuito filtro passa-banda RLC serie}
+
+\paragraph{Es. 11}
+Abbiamo realizzato con TINA il seguente circuito:
+
+\begin{circuitikz}
+\centering
+\draw (0.5 ,0) node[anchor=east] {$V_{in}$};
+\draw (0.5 ,0) to[short, o-](1.5,0);
+\draw (1.5,0) to[R,l^=$R$](1.5, -1.5);
+\draw (1.5, -1.5) to[L,l^=$L$](1.5, -3);
+\draw (2.5 ,-3) to[short, o-](1.5,-3);
+\draw (2.5, -3) node[anchor=west] {$V_{out}$};
+\draw (1.5, -3) to[C,l^=$C$](1.5, -4.5);
+\node[ground]at (1.5 , -4.5){};
+\end{circuitikz}
+
+Sono stati assegnati ai vari componenti i seguenti valori: \textit{L=$4.7$ mH$,$~C=$100$ nF$,$~R=$10~\Omega$}, da cui lo schema in figura:
+
+\begin{figure}[htp]
+\centering
+
+%\includegraphics[scale=.4]{RLC}
+
+\caption{Circuito realizzato con TINA}
+\end{figure}
+
+Abbiamo avviato la simulazione mandando in ingresso un segnale sinusoidale di ampiezza pp di 2 V, spazzando un intervallo di frequenze (1 $Hz$, 20 $kHz$). I grafici per l'ampiezza e per lo sfasamento restituiti sono:
+
+\begin{figure}[htp]
+\label{fig:fig1}
+
+\centering
+
+%\includegraphics[scale=.4]{tinadiag}
+
+\caption{Grafici della simulazione del circuito RLC secondo i valori fissati realizzato con TINA. La linea verde rappresenta i riferimento del segnale in ingresso. Il grafico superiore rappresenta il guadagno, quello inferiore lo sfasamento, entrambi in scala lineare.}
+
+\end{figure}
+
+La curva relativa al guadagno risulta piccata intorno al valore $f=7.35 kHz$, per cui l'amplificazione è circa 25 dB, con una FWHM di circa 1.5 $kHz$ e si mantiene al di sopra della linea verde, ovvero il circuito amplifica il segnale in ingresso, fino alla frequenza di 10 kHz, dopodiché il circuito comincia ad attenuare il segnale in ingresso.
+
+\paragraph{Es. 12}
+Dai valori della simulazione si ha che $f_0 = 7.34 kHz$, che nel grafico corrisponde al punto in cui si ha l'amplificazione massima, dunque $f_0$ rappresenta la frequenza di risonanza de circuito.\\
+Per capire come variasse l'ampiezza della curva in funzione dei parametri del circuito, abbiamo effettuato diverse simulazioni variando i valori dei componenti. I risultati sono raccolti in ~\ref{tab:tab1} :\\
+
+\begin{table}[htp]
+\label{tab:tab1}
+\caption{}
+\begin{tabular}{c|c|c|c}
+\hline 
+R ($\Omega$) & L ($mH$) & C ($nF$) & FWHM ($kHz$) \\ 
+\hline 
+10 & 4.7 & 100 & 1.5 \\ 
+\hline 
+20 & 4.7 & 100 & 2 \\ 
+\hline 
+30 & 4.7 & 100 & 2.6 \\ 
+\hline 
+40 & 4.7 & 100 & 3 \\ 
+\hline 
+10 & 9.4 & 100 & 0.9 \\ 
+\hline 
+10 & 18.8 & 100 & 0.6 \\ 
+\hline 
+10 & 37.6 & 100 & 0.45 \\ 
+\hline 
+10 & 4.7 & 25 & 2 \\ 
+\hline 
+10 & 4.7 & 50 & 1.8 \\ 
+\hline 
+10 & 4.7 & 200 & 1.2 \\
+\hline
+\end{tabular} 
+\centering
+\end{table}
+
+Dai dati si nota che l'ampiezza del grafico e dunque la selettività in frequenza aumenta all'aumentare della resistenza, mentre diminuisce all'aumentare dell'induttanza e della capacità.
+
+\paragraph{Es. 13}
+In tabella ~\ref{tab:tab2} i dati relativi all'induttore impiegato per la realizzazione del circuito trovati sul sito della \texttt{Epcos}:
+
+\begin{table}[htp]
+\caption{}
+\label{tab:tab2}
+\centering
+\begin{tabular}{c|c}
+\hline
+\textbf{Design} & "radial"\\
+\hline
+\textbf{Inductance} & 4.7 mH\\
+\hline
+\textbf{Tolerance} & 5 \% \\
+\hline
+\textbf{Rated Current} & 0.055 A\\
+\hline
+\textbf{Resistence} & 78 $\Omega$\\
+\hline
+\textbf{Quality factor} & 35\\
+\hline
+\textbf{Resonance frequency} & 0.7 MHz\\
+\hline
+\end{tabular}
+\end{table}
+
+\paragraph{Es. 14}
+
+Abbiamo aggiunto una resistenza di 78 $\Omega$ all'induttore, dopodiché abbiamo avviato un'altra simulazione con TINA. Il grafico restituito è il seguente:
+\begin{figure}[htbp]
+\centering
+%\includegraphics[scale=.4]{tinadiagresint}
+\caption{Simulazione con resistenza interna nell'induttore.}
+\end{figure}
+
+Dal confronto con \ref{fig:fig1} appaiono evidenti delle differenze. Anzitutto la frequenza di risonanza si è abbassata a circa 7 Hz, l'ampiezza è aumentata a 4 kHz (come era prevedibile per le prove dell'esercizio 12), ma soprattutto il massimo di amplificazione si è abbassato a 7.9 dB, dovuto ovviamente alla maggiore dissipazione nel circuito.
+
+\paragraph{Es. 15}
+Abbiamo realizzato praticamente il circuito sulla breadboard, impiegando un resistore da 10 $\Omega$, un induttore da 4.7 mH e un parallelo di due condensatori da 56 nF, dunque con capacità equivalente di 112 nF. Abbiamo adattato le simulazioni di TINA a quest'ultimo valore della capacità. Abbiamo collegato la breadboard alla scheda di acquisizione e avviato la presa dati tramite il VI 'bode.ph'. L'andamento dei dati sperimentali si discosta sensibilmente da quello previsto dalle simulazioni con TINA, come si evince dal grafico seguente:
+
+\begin{figure}[htp]
+\centering
+%\includegraphics[scale=.2]{graph}
+\caption{Confronto dei dati sperimentali con l'andamento simulato}
+\end{figure}
+
+La maggiore attenuazione la si può imputare a componenti resistive non tenute in considerazione, ma al di là di questo non si riesce a spiegare tale disparità. Le frequenze di risonanza sono compatibili, se si prende come incertezza sul massimo osservato metà della distanza del picco da uno dei due punti adiacenti, per cui si può ragionevolmente supporre che non vengano introdotti ulteriori elementi capacitivi o induttivi semplici. \\
+
+Un'altra caratteristica strana è l'andamento ad alte frequenze. Nella simulazione, a partire da $9 \si{kHz} $la curva decresce molto più rapidamente di quanto non facciano i punti sperimentali. Questo andamento non è stato rilevato in alcuna simulazione che è stata fatta variando i valori dei vari elementi circuitali per cercare di ricostruire l'andamento osservato. Variando i vari parametri infatti, si è sempre rilevato una decrescita rapida della curva della simulazione a partire da una certa frequenza (si è sempre impiegato lo stesso intervallo di frequenze), il che potrebbe rafforzare l'ipotesi che la ragione di tale andamento non stia nell'aggiunta in serie o in parallelo al circuito di elementi circuitali semplici (il variare dei parametri nella simulazione si potrebbe interpretare come il sostituire ad esempio la resistenza iniziale con una resistenza equivalente, analogamente per la capacità e l'induttanza).
+
 
 \section{Conclusion}
 	This section summarizes the paper.
