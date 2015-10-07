@@ -1,0 +1,103 @@
+%\documentclass[a4paper]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[italian]{babel}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{hyperref}
+%\usepackage{amsthm}
+%\usepackage{graphicx}
+\documentclass[journal, a4paper]{IEEEtran}
+\usepackage[italian]{babel}
+\usepackage{booktabs}
+\usepackage{siunitx}%Questo serve a caricare il pacchetto delle unità di misura del sistema internazionale%
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{url}
+\usepackage{amsmath}
+
+
+\usepackage{keyval}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{authblk}
+%\usepackage{hyperref}
+
+\begin{document}
+
+
+% Define document title and author
+	\title{Tecnologie Digitali - Logbook Week 2}
+	\author[1]{Salvatore Bottaro}
+		\author[2]{Lorenzo M. Perrone}
+		\affil[1]{\texttt{email@sa.com}}
+		\affil[2]{\texttt{lorenzo.perrone.lmp@gmail.com}}
+	\markboth{Tecnologie Digitali - Di Lieto}{}
+	\maketitle
+	
+\begin{abstract}
+	Logbook di laboratorio di Tecnologie Digitali, a.a. 2015/2016. Week 2.
+\end{abstract}
+
+\section{Lezione 06/10/2015}
+Durante la lezione di oggi, è stato introdotto il funzionamento dell' \textit{amplificatore operazionale} (detto \textsc{op-amp}). Tale componente fu ideato nel 1934 dall'ignegnere della Bell, Black H., che stava cercando un modo per amplificare i segnali telefonici (mantenendo un guadagno il più possibile uniforme fra le frequenze tipiche dello spettro uditivo $10\si{Hz}\rightarrow 10 \si{kHz} $),  e soprattutto modulare questa amplificazione in base ai fattori esterni, come condizioni metereologiche o strumentali. La soluzione fu quella di introdurre un amplificatore sovrapotenziato da regolare tramite un circuito di reazione (\textit{feedback}) e dei componenti passivi.
+
+\begin{circuitikz}
+\centering
+
+\end{circuitikz}
+
+
+
+\begin{figure}[htp]
+
+\end{figure}
+
+
+
+
+%\begin{equation}
+
+%\end{equation}
+
+
+\subsection{}
+
+
+\subsection{}
+
+
+
+\section{Conclusion}
+	This section summarizes the paper.
+
+% Now we need a bibliography:
+\begin{thebibliography}{5}
+
+	%Each item starts with a \bibitem{reference} command and the details thereafter.
+	\bibitem{HOP96} % Transaction paper
+	J.~Hagenauer, E.~Offer, and L.~Papke. Iterative decoding of binary block
+	and convolutional codes. {\em IEEE Trans. Inform. Theory},
+	vol.~42, no.~2, pp.~429–-445, Mar. 1996.
+
+	\bibitem{MJH06} % Conference paper
+	T.~Mayer, H.~Jenkac, and J.~Hagenauer. Turbo base-station cooperation for intercell interference cancellation. {\em IEEE Int. Conf. Commun. (ICC)}, Istanbul, Turkey, pp.~356--361, June 2006.
+
+	\bibitem{Proakis} % Book
+	J.~G.~Proakis. {\em Digital Communications}. McGraw-Hill Book Co.,
+	New York, USA, 3rd edition, 1995.
+
+	\bibitem{talk} % Web document
+	F.~R.~Kschischang. Giving a talk: Guidelines for the Preparation and Presentation of Technical Seminars.
+	\url{http://www.comm.toronto.edu/frank/guide/guide.pdf}.
+
+	\bibitem{5}
+	IEEE Transactions \LaTeX and Microsoft Word Style Files.
+	\url{http://www.ieee.org/web/publications/authors/transjnl/index.html}
+
+\end{thebibliography}
+
+% Your document ends here!
+\end{document}

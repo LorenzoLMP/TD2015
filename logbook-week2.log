@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  5 OCT 2015 09:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  7 OCT 2015 14:05
 entering extended mode
-**logbook-week1.tex
-(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.tex
+**logbook-week2.tex
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1163,7 +1163,7 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count179
 \c@affil=\count180
 )
-(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.aux)
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
@@ -1289,238 +1289,31 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 38.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- []
-
-
-Underfull \hbox (badness 6910) in paragraph at lines 59--73
-\OT1/ptm/m/n/10 Il cir-cui-to []e sta-to rea-liz-za-to sul-la bread-board co-me
-
- []
-
-
-Underfull \hbox (badness 6016) in paragraph at lines 92--93
-[]\OT1/ptm/m/n/10 Proseguendo il di-scor-so av-via-to du-ran-te la le-zio-ne
- []
-
-
-Underfull \hbox (badness 2512) in paragraph at lines 92--93
-\OT1/ptm/m/n/10 pre-ce-den-te, tra-mi-te un VI ap-po-si-to (NO-ME VI), si []e
- []
-
-
-Underfull \hbox (badness 5446) in paragraph at lines 92--93
-\OT1/ptm/m/n/10 ana-liz-za-to l'an-da-men-to del-la fun-zio-ne di tra-sfe-ri-me
-n-to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-
- []
-
-<./breadboard1_passabasso.png, id=4, 445.665pt x 281.25075pt>
-File: ./breadboard1_passabasso.png Graphic file (type png)
-
-<use ./breadboard1_passabasso.png>
-Package pdftex.def Info: ./breadboard1_passabasso.png used on input line 97.
-(pdftex.def)             Requested size: 226.79846pt x 143.12698pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
-
- []
-
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 114--122
-
- []
-
-<./attenuaz_passa_basso_loglog.png, id=21, 578.16pt x 433.62pt>
-File: ./attenuaz_passa_basso_loglog.png Graphic file (type png)
-
-<use ./attenuaz_passa_basso_loglog.png>
-Package pdftex.def Info: ./attenuaz_passa_basso_loglog.png used on input line 1
-52.
-(pdftex.def)             Requested size: 277.20154pt x 207.89703pt.
-
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 152--153
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--169
-
- []
-
-
-Underfull \hbox (badness 2653) in paragraph at lines 172--173
-[]\OT1/ptm/m/n/10 A que-sto pun-to, tra-mi-te il soft-ware \OT1/ptm/m/sc/10 TI-
-NA\OT1/ptm/m/n/10 , []e sta-to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--181
-
- []
-
-[2 <C:/Users/LorenzoLMP/Documents/TD2015-repo/breadboard1_passabasso.png> <C:/U
-sers/LorenzoLMP/Documents/TD2015-repo/attenuaz_passa_basso_loglog.png (PNG copy
-)>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-<./breadboard2_passabanda.png, id=27, 608.87476pt x 241.50224pt>
-File: ./breadboard2_passabanda.png Graphic file (type png)
-
-<use ./breadboard2_passabanda.png>
-Package pdftex.def Info: ./breadboard2_passabanda.png used on input line 202.
-(pdftex.def)             Requested size: 176.39923pt x 69.96751pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--215
-
- []
-
-<./passabanda_sfasa_octave.png, id=28, 578.16pt x 433.62pt>
-File: ./passabanda_sfasa_octave.png Graphic file (type png)
-
-<use ./passabanda_sfasa_octave.png>
-Package pdftex.def Info: ./passabanda_sfasa_octave.png used on input line 220.
-(pdftex.def)             Requested size: 277.20154pt x 207.89703pt.
-
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 220--221
- [][] 
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 221--221
-[]\OT1/ptm/m/n/10 Figura 5: |Gra-fi-co del-l'at-te-nua-zio-ne e del-lo sfa-sa-m
-en-to
- []
-
-<./passabanda_sfasa_tina.png, id=29, 578.16pt x 433.62pt>
-File: ./passabanda_sfasa_tina.png Graphic file (type png)
-
-<use ./passabanda_sfasa_tina.png>
-Package pdftex.def Info: ./passabanda_sfasa_tina.png used on input line 231.
-(pdftex.def)             Requested size: 277.20154pt x 207.89703pt.
-
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 231--232
- [][] 
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 232--232
-[]\OT1/ptm/m/n/10 Figura 6: |Gra-fi-co del-l'at-te-nua-zio-ne e del-lo sfa-sa-m
-en-to
- []
-
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 6 in font nullfont!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <C:/Users/LorenzoLMP/Documents/TD2015-repo/breadboard2_passabanda.png> <C:/
-Users/LorenzoLMP/Documents/TD2015-repo/passabanda_sfasa_octave.png (PNG copy)> 
-<C:/Users/LorenzoLMP/Documents/TD2015-repo/passabanda_sfasa_tina.png (PNG copy)
->]
-
-Package caption Warning: \label without proper \caption on input line 284.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:tab1' on page 4 undefined on input line 281.
-
-
-Underfull \hbox (badness 5475) in paragraph at lines 280--282
-\OT1/ptm/m/n/10 dei pa-ra-me-tri del cir-cui-to, ab-bia-mo ef-fet-tua-to di-ver
--se
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--282
-
- []
-
-
-Package caption Warning: \label without proper \caption on input line 267.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:fig1' on page 4 undefined on input line 351.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
-
- []
-
-[4] [5
-
-] (C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week2.aux) ) 
 Here is how much of TeX's memory you used:
- 25594 strings out of 493921
- 571406 string characters out of 3147266
- 617040 words of memory out of 3000000
- 28474 multiletter control sequences out of 15000+200000
- 48774 words of font info for 102 fonts, out of 3000000 for 9000
+ 25234 strings out of 493921
+ 562246 string characters out of 3147266
+ 603907 words of memory out of 3000000
+ 28122 multiletter control sequences out of 15000+200000
+ 46045 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,12n,55p,994b,741s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
-utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logbook-week1.pdf (5 pages, 390473 bytes).
+ 56i,8n,55p,741b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program File
+s/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courie
+r/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on logbook-week2.pdf (1 page, 77290 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
