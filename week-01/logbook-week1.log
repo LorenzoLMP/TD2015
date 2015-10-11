@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 17:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 18:30
 entering extended mode
 **logbook-week1.tex
-(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.tex
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-01\logbook-week1.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1163,7 +1163,7 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count179
 \c@affil=\count180
 )
-(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week1.aux)
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-01\logbook-week1.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
@@ -1383,9 +1383,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--182
 
  []
 
-[2 <C:/Users/LorenzoLMP/Documents/TD2015-repo/breadboard1_passabasso.png> <C:/U
-sers/LorenzoLMP/Documents/TD2015-repo/attenuaz_passa_basso_loglog.png (PNG copy
-)>]
+[2 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/breadboard1_passabasso.pn
+g> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/attenuaz_passa_basso_logl
+og.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
@@ -1454,11 +1454,10 @@ Missing character: There is no 6 in font nullfont!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <C:/Users/LorenzoLMP/Documents/TD2015-repo/breadboard2_passabanda.png> <C:/
-Users/LorenzoLMP/Documents/TD2015-repo/passabanda_sfasa_octave.png (PNG copy)> 
-<C:/Users/LorenzoLMP/Documents/TD2015-repo/passabanda_sfasa_tina.png (PNG copy)
->]
-<RLC.jpg, id=33, 428.60126pt x 252.945pt>
+ [3 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/breadboard2_passabanda.p
+ng> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/passabanda_sfasa_octave.
+png (PNG copy)> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/passabanda_s
+fasa_tina.png (PNG copy)>] <RLC.jpg, id=33, 428.60126pt x 252.945pt>
 File: RLC.jpg Graphic file (type jpg)
  <use RLC.jpg>
 Package pdftex.def Info: RLC.jpg used on input line 260.
@@ -1486,9 +1485,10 @@ File: tinadiagresint.jpg Graphic file (type jpg)
 Package pdftex.def Info: tinadiagresint.jpg used on input line 345.
 (pdftex.def)             Requested size: 219.2151pt x 134.9016pt.
 
-[4 <C:/Users/LorenzoLMP/Documents/TD2015-repo/RLC.jpg> <C:/Users/LorenzoLMP/Doc
-uments/TD2015-repo/tinadiag.jpg> <C:/Users/LorenzoLMP/Documents/TD2015-repo/tin
-adiagresint.jpg>] <graph1.jpg, id=41, 562.1pt x 421.575pt>
+[4 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/RLC.jpg> <C:/Users/Lorenz
+oLMP/Documents/TD2015-repo/week-01/tinadiag.jpg> <C:/Users/LorenzoLMP/Documents
+/TD2015-repo/week-01/tinadiagresint.jpg>]
+<graph1.jpg, id=41, 562.1pt x 421.575pt>
 File: graph1.jpg Graphic file (type jpg)
  <use graph1.jpg>
 Package pdftex.def Info: graph1.jpg used on input line 356.
@@ -1499,33 +1499,34 @@ File: graph4.jpg Graphic file (type jpg)
  <use graph4.jpg>
 Package pdftex.def Info: graph4.jpg used on input line 364.
 (pdftex.def)             Requested size: 191.11147pt x 143.33359pt.
- [5 <C:/Users/LorenzoLMP/Documents/TD2015-repo/graph1.jpg> <C:/Users/LorenzoLMP
-/Documents/TD2015-repo/graph4.jpg>] (C:\Users\LorenzoLMP\Documents\TD2015-repo\
-logbook-week1.aux) ) 
+ [5 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/graph1.jpg> <C:/Users/Lo
+renzoLMP/Documents/TD2015-repo/week-01/graph4.jpg>]
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-01\logbook-week1.aux) ) 
 Here is how much of TeX's memory you used:
  25611 strings out of 493921
- 571726 string characters out of 3147266
+ 571782 string characters out of 3147266
  612960 words of memory out of 3000000
  28488 multiletter control sequences out of 15000+200000
  44946 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,12n,55p,847b,741s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.en
-c}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
-/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logbook-week1.pdf (5 pages, 520115 bytes).
+{C:/Prog
+ram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/c
+ourier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on logbook-week1.pdf (5 pages, 520803 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

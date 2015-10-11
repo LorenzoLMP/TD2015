@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 17:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 18:30
 entering extended mode
 **logbook-week2.tex
-(C:\Users\LorenzoLMP\Desktop\week02\logbook-week2.tex
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-02\logbook-week2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1163,7 +1163,7 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count179
 \c@affil=\count180
 )
-(C:\Users\LorenzoLMP\Desktop\week02\logbook-week2.aux)
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-02\logbook-week2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
@@ -1388,8 +1388,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <C:/Users/LorenzoLMP/Desktop/week02/opamp-disegno.png> <C:/Users/LorenzoLMP/De
-sktop/week02/op-amp_invert.png>]
+ <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/opamp-disegno.png> <C:/User
+s/LorenzoLMP/Documents/TD2015-repo/week-02/op-amp_invert.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
@@ -1500,10 +1500,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
-[2 <C:/Users/LorenzoLMP/Desktop/week02/V_ripetuti_-1+1_21mis.png (PNG copy)> <C
-:/Users/LorenzoLMP/Desktop/week02/fit_V_ripetuti_21mis.png> <C:/Users/LorenzoLM
-P/Desktop/week02/fit_V_ripetuti_21mis_rgen.png>]
-<./non-inv_0_8-21_no_rgen_2mo.png, id=33, 578.16pt x 433.62pt>
+[2 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/V_ripetuti_-1+1_21mis.png
+ (PNG copy)> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_V_ripetuti_
+21mis.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_V_ripetuti_21
+mis_rgen.png>] <./non-inv_0_8-21_no_rgen_2mo.png, id=33, 578.16pt x 433.62pt>
 File: ./non-inv_0_8-21_no_rgen_2mo.png Graphic file (type png)
 
 <use ./non-inv_0_8-21_no_rgen_2mo.png>
@@ -1565,11 +1565,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
-[3 <C:/Users/LorenzoLMP/Desktop/week02/op-amp-noninv.png> <C:/Users/LorenzoLMP/
-Desktop/week02/non-inv_0_8-21_no_rgen_2mo.png (PNG copy)> <C:/Users/LorenzoLMP/
-Desktop/week02/fit_non-invertente.png> <C:/Users/LorenzoLMP/Desktop/week02/non-
-inv-confronto-senza_con_rgen-0_9_21.png (PNG copy)> <C:/Users/LorenzoLMP/Deskto
-p/week02/non-inv_0_8-21_rgen_2mo_confronto.png (PNG copy)>]
+[3 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/op-amp-noninv.png> <C:/Us
+ers/LorenzoLMP/Documents/TD2015-repo/week-02/non-inv_0_8-21_no_rgen_2mo.png (PN
+G copy)> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_non-invertente.
+png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/non-inv-confronto-senza
+_con_rgen-0_9_21.png (PNG copy)> <C:/Users/LorenzoLMP/Documents/TD2015-repo/wee
+k-02/non-inv_0_8-21_rgen_2mo_confronto.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
@@ -1628,9 +1629,9 @@ File: fit_follower_1_21_2M_2k_22k.png Graphic file (type png)
 Package pdftex.def Info: fit_follower_1_21_2M_2k_22k.png used on input line 283
 .
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
- [4 <C:/Users/LorenzoLMP/Desktop/week02/fit_non-invertente_rgen_2mo.png> <C:/Us
-ers/LorenzoLMP/Desktop/week02/fit_offset.png> <C:/Users/LorenzoLMP/Desktop/week
-02/bah.jpg>]
+ [4 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_non-invertente_rgen_
+2mo.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_offset.png> <C:
+/Users/LorenzoLMP/Documents/TD2015-repo/week-02/bah.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
@@ -1664,11 +1665,12 @@ File: convertitore_analysis_infinite.jpg Graphic file (type jpg)
 Package pdftex.def Info: convertitore_analysis_infinite.jpg used on input line 
 356.
 (pdftex.def)             Requested size: 191.81949pt x 118.04276pt.
- [5 <C:/Users/LorenzoLMP/Desktop/week02/fit_follower_1_21_2k_2k_22k.png> <C:/Us
-ers/LorenzoLMP/Desktop/week02/fit_follower_1_21_2M_2k_22k.png> <C:/Users/Lorenz
-oLMP/Desktop/week02/CONVERTITORE.jpg> <C:/Users/LorenzoLMP/Desktop/week02/conve
-rtitore_analysis.jpg> <C:/Users/LorenzoLMP/Desktop/week02/convertitore_analysis
-_infinite.jpg>]
+ [5 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_follower_1_21_2k_2k_
+22k.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_follower_1_21_2
+M_2k_22k.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/CONVERTITORE.j
+pg> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/convertitore_analysis.jp
+g> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/convertitore_analysis_inf
+inite.jpg>]
 <newTINA.jpg, id=61, 492.84125pt x 321.2pt>
 File: newTINA.jpg Graphic file (type jpg)
  <use newTINA.jpg>
@@ -1739,10 +1741,10 @@ File: plotdiodores.png Graphic file (type png)
  <use plotdiodores.png>
 Package pdftex.def Info: plotdiodores.png used on input line 429.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
- [6 <C:/Users/LorenzoLMP/Desktop/week02/newTINA.jpg> <C:/Users/LorenzoLMP/Deskt
-op/week02/immagine3.png> <C:/Users/LorenzoLMP/Desktop/week02/dido.jpg> <C:/User
-s/LorenzoLMP/Desktop/week02/diodo.jpg>]
-<plotdiodo_no_offset.png, id=71, 578.16pt x 433.62pt>
+ [6 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/newTINA.jpg> <C:/Users/L
+orenzoLMP/Documents/TD2015-repo/week-02/immagine3.png> <C:/Users/LorenzoLMP/Doc
+uments/TD2015-repo/week-02/dido.jpg> <C:/Users/LorenzoLMP/Documents/TD2015-repo
+/week-02/diodo.jpg>] <plotdiodo_no_offset.png, id=71, 578.16pt x 433.62pt>
 File: plotdiodo_no_offset.png Graphic file (type png)
 
 <use plotdiodo_no_offset.png>
@@ -1779,35 +1781,36 @@ File: plotdiodo_germanio_220k.png Graphic file (type png)
 <use plotdiodo_germanio_220k.png>
 Package pdftex.def Info: plotdiodo_germanio_220k.png used on input line 462.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
- [7 <C:/Users/LorenzoLMP/Desktop/week02/plotdiodosil.png> <C:/Users/LorenzoLMP/
-Desktop/week02/plotdiodores.png> <C:/Users/LorenzoLMP/Desktop/week02/plotdiodo_
-no_offset.png> <C:/Users/LorenzoLMP/Desktop/week02/dati_Tina.png>] [8
+ [7 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodosil.png> <C:/Us
+ers/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodores.png> <C:/Users/Lorenz
+oLMP/Documents/TD2015-repo/week-02/plotdiodo_no_offset.png> <C:/Users/LorenzoLM
+P/Documents/TD2015-repo/week-02/dati_Tina.png>] [8
 
- <C:/Users/LorenzoLMP/Desktop/week02/plotdiodo_germanio_220k.png>] (C:\Users\Lo
-renzoLMP\Desktop\week02\logbook-week2.aux) ) 
+ <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodo_germanio_220k.png
+>] (C:\Users\LorenzoLMP\Documents\TD2015-repo\week-02\logbook-week2.aux) ) 
 Here is how much of TeX's memory you used:
  25767 strings out of 493921
- 575289 string characters out of 3147266
+ 575394 string characters out of 3147266
  612111 words of memory out of 3000000
  28628 multiletter control sequences out of 15000+200000
  44938 words of font info for 97 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,12n,55p,788b,702s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/
-enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/uc
-rr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on logbook-week2.pdf (8 pages, 2158661 bytes).
+{C:/P
+rogram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on logbook-week2.pdf (8 pages, 2159206 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

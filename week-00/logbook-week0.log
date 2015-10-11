@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 17:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 18:29
 entering extended mode
 **logbook-week0.tex
-(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week0.tex
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-00\logbook-week0.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -819,7 +819,7 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count158
 \c@affil=\count159
 )
-(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week0.aux)
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-00\logbook-week0.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
 LaTeX Font Info:    ... okay on input line 134.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
@@ -963,27 +963,27 @@ Package pdftex.def Info: ./acquisbase.png used on input line 172.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <C:/Users/LorenzoLMP/Documents/TD2015-repo/acquisbase.png>]
-(C:\Users\LorenzoLMP\Documents\TD2015-repo\logbook-week0.aux) ) 
+ <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-00/acquisbase.png>]
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-00\logbook-week0.aux) ) 
 Here is how much of TeX's memory you used:
  11619 strings out of 493921
- 245777 string characters out of 3147266
+ 245833 string characters out of 3147266
  242707 words of memory out of 3000000
  14763 multiletter control sequences out of 15000+200000
  44747 words of font info for 92 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  38i,7n,30p,511b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program File
-s/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on logbook-week0.pdf (1 page, 126857 bytes).
+{C:/Prog
+ram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on logbook-week0.pdf (1 page, 127540 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
