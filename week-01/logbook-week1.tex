@@ -57,31 +57,21 @@ Abbiamo misurato la d.d.p. $V_{out}$ ai capi della resistenza $R_2$ di un partit
 
 
 dove $V_{in}$ è la tensione in ingresso.\\
-Sia il segnale in ingresso che l'analisi del segnale in uscita sono stati ottenuti per mezzo del VI \textit{inserire nome VI} composto da tre pannels. Il primo pannel contiene una copia del VI \textit{inserire nome VI} che genera segnali su un fondoscala di 10 V con profondità digitale di 12 bit (dunque con una risoluzione di 5 mV)
-%inserire le altre caratteristiche del segnale
-,il secondo pannel contiene un VI(?) per ritardare di qualche ms l'acquisizione del segnale in uscita rispetto all'istante in cui viene generato il segnale in ingresso, il terzo pannel contiene il VI per l'analisi del segnale in uscita e che restituisce sul front pannel il valor medio sui campionamenti effettuati 
-%inserire dettagli
-e relativa deviazione standard.\\
-Il circuito è stato realizzato sulla breadboard come nell'immagine:
+Sia il segnale in ingresso che l'analisi del segnale in uscita sono stati ottenuti per mezzo del VI \textit{v\_in\_v\_out.vi} composto da tre pannels. Il primo pannel contiene una copia del VI \textit{v\_in\_v\_out.vi} che genera segnali su un fondoscala di 10 V con profondità digitale di 12 bit (dunque con una risoluzione di 5 mV), il secondo pannel contiene un VI per ritardare di qualche ms l'acquisizione del segnale in uscita rispetto all'istante in cui viene generato il segnale in ingresso, il terzo pannel contiene il VI per l'analisi del segnale in uscita e che restituisce sul front pannel il valor medio sui campionamenti effettuati e relativa deviazione standard.\\
 
-\begin{figure}[htp]
-\centering
+Il circuito è stato realizzato sulla breadboard prendendo come resistenze $R_1 = 22 ~ k\Omega \pm 10 \%$ e $R_2 = 220~ k\Omega \pm 10 \%$, scelte in modo da garantire che la corrente nel circuito fosse dell'ordine del $\mu$A. Il cavo per la terra è stato collegato alla CB29 della scheda di acquisizione, il cavo in $V_{in}$ alla CB22, analog output 0 della scheda, mentre il cavo in $V_{out}$ alla CB68, analog input 0 della scheda. \\
+Abbiamo scelto $V_{in} = 2.75 V$, dopodiché prima di collegare la breadboard alla scheda abbiamo verificato il corretto funzionamento della scheda collegando il CB22 al CB68 e avviando il VI. Il valore restituito è stato $V_{out} = 2.749 V \pm 0.001 V$ che garantisce il corretto funzionamento della scheda. Abbiamo infine collegato la scheda al circuito e avviato il VI. Il valore atteso si ottiene da:\\
 
-%\includegraphics[scale=.14]{circuito}
-
-\caption{Circuito su breadboard realizzato in laboratorio}
-\end{figure}
-
-Sono state scelte resistenze $R_1 = 22 ~ k\Omega \pm 10 \%$ e $R_2 = 220~ k\Omega \pm 10 \%$, scelte in modo da garantire che la corrente nel circuito fosse dell'ordine del $\mu$A. Il cavo per la terra è stato collegato alla CB29 della \textit{scheda verde}, il cavo in $V_{in}$ alla CB22, analog output 0 della scheda di acquisizione, mentre il cavo in $V_{out}$ alla CB68, analog input 0 della scheda. Abbiamo scelto $V_{in} = 2.75 V$, dopodiché prima di collegare la breadboard alla scheda abbiamo verificato il corretto funzionamento della scheda collegando il CB22 al CB68 e avviando il VI. Il valore restituito è stato $V_{out} = 2.749 V \pm 0.001 V$ che garantisce il corretto funzionamento della scheda. Abbiamo infine collegato la scheda al circuito e avviato il VI. Il valore atteso si ottiene da:
 \begin{equation}
 V_{out}^{att}= \frac{V_{in}}{1+\frac{R_1}{R_2}}
-\end{equation}
+\end{equation}\\
+
 da cui, per la scelta delle resistenze, $V_{out}^{att} = 2.5 V \pm 20 \%$. Il valore registrato è stato $V_{out} = 2.502 V \pm 0.002 V$. Abbiamo scambiato il cavo per la CB29 con quello della CB22, scambiando così i ruoli delle resistenze. In tal caso si ha $V_{out}^{att} = 0.25~ V \pm 20 \%$ mentre quello registrato $V_{out} = 0.244 ~V \pm 0.001 ~V$.
 
 \section{Lezione 29/09/2015}
 Durante la lezione odierna, abbiamo iniziato a lavorare con il software TINA, un simulatore analogico SPICE-Based prodotto dalla \textit{Texas Instruments}. Tramite TINA è possibile analizzare il comportamento di circuiti più o meno complessi, potendo inserire numerosi componenti circuitali di cui settare i valori. \\
 In primo luogo è stato riprodotto il circuito impiegato nella lezione precedente e analizzato in continua per verificare che i valori da noi trovati fossero compatibili con quelli teorici previsti da TINA, usando la funzione \textsc{dc transfer characteristic}.
-Quindi, abbiamo spostato la nostra attenzione sui circuiti in alternata (vedi Figura ASSAAAA), per i quali è possibile determinare una \textit{funzione di trasferimento} $V_{out} = f(V_{in})$, dove $V_{in}$ è la tensione (alternata) fornita in ingresso, e $V_{out}$ quella in uscita.
+Quindi abbiamo spostato la nostra attenzione sui circuiti in alternata, per i quali è possibile determinare una \textit{funzione di trasferimento} $V_{out} = f(V_{in})$, dove $V_{in}$ è la tensione (alternata) fornita in ingresso, e $V_{out}$ quella in uscita.
 I circuiti che esamineremo prevalentemente saranno di tipo \textit{lineare}, dove è possibile stabilire una relazione fra $V_{in}$ e $V_{out}$ come segue:
 
 \begin{equation}
@@ -90,7 +80,7 @@ V_{out}(\omega)= H(\omega)V_{in}(\omega)
 
 
 \section{Lezione 30/09/2015}
-Proseguendo il discorso avviato durante la lezione precedente, tramite un VI apposito (NOME VI), si è analizzato l'andamento della funzione di trasferimento attraverso un diagramma di Bode per un circuito strutturato come segue (e realizzato sulla \textit{Breadboard}):\\
+Proseguendo il discorso avviato durante la lezione precedente, tramite un VI apposito (bode\_ph.vi), si è analizzato l'andamento della funzione di trasferimento attraverso un diagramma di Bode per un circuito strutturato come segue (e realizzato sulla \textit{Breadboard}):\\
 
 
 \begin{figure}
@@ -135,7 +125,7 @@ Alternativamente, possiamo analizzare il circuito scrivendo il modulo della funz
 \end{equation}
 
 
-E' interessante studiare il limitre asintotico per alte frequenze (alte rispetto alla frequenza di taglio), che ci fornisce un'ottima approssimazione del valore richiesto.
+E' interessante studiare il limite asintotico per alte frequenze (alte rispetto alla frequenza di taglio), che ci fornisce un'ottima approssimazione del valore richiesto.
 
 \begin{equation}
 \rvert H(f) \lvert = \frac{1}{\sqrt{1+(\frac{f}{f_T})^2}}
@@ -169,7 +159,7 @@ Per le frequenze $f_{50} = 50 Hz$ e $f_{500} = 500 Hz$ i valori dell'attenuazion
 \end{tabular} \\
 
 
-\subsection{Analisi AC con TINA}
+\section{Analisi AC con TINA}
 A questo punto, tramite il software \textsc{TINA}, è stato riprodotto il circuito da noi costruito sulla breadboard e sono state settate come frequenze per il generatore AC proprio  $f_{50}$ e $f_{500}$, per cui \textsc{TINA} ha gentilmente calcolato i valori dell'attenuazione e dello sfasamento per via simbolica. \\
 
 \begin{tabular}{|c|c|c|}
@@ -187,7 +177,32 @@ Per la regione del grafico compresa fra $500-1000 \si{Hz}$ il guadagno di $-6db$
 
 Come controprova sul circuito realizzato sperimentalmente, impostando una frequenza di start dello sweep $f_{start} = 160 \si{Hz}$ e una frequenza di end-sweep $f_{end} = 200 \si{Hz}$, otteniamo che in corrispondenza di un'amplificazione di $0.5$, si ha una frequenza pari circa a $f = 182.36 \si{Hz}$, in linea con quanto visto.
 
-\subsection{Filtri passa-banda capacitivi}
+\subsection{Approfondimento: Voltage generator di TINA - Homework 1}
+Nella finestra del \textit{Voltage Generator} di TINA si può scegliere il tipo di forma d'onda del segnale generato, e ovviamente i parametri necessari affinchè ciascuna forma sia ben definita, come frequenza, fase e ampiezza per quelle sinusoidali, il \textit{rise time} per quelle quadrate, l'ampiezza dell'impulso per i treni di impulsi ecc.\\
+E' possibile, inoltre, scegliere un offset DC aggiunto, quindi, al segnale AC, così come impostare una resistenza interna al generatore, facendolo diventare "reale" da "ideale".
+
+
+\subsection{Filtro passa-alto con TINA - Homework 2}
+L'altra tipologia di filtro che si può realizzare impiegando componenti capacitivi e resistivi è il filtro passa-alto, che si ottiene a partire dal filtro passa-basso scambiando nel circuito condensatore e resistenza. Come suggerisce il nome, un circuito di questo tipo taglia le frequenze inferiori alla frequenza di taglio (definita allo stesso modo che per il passa-alto), e lascia passare con attenuazione 1 (cioè non attenua) quelle molto maggiori della $f_T$.\\
+Valgono delle considerazioni analoghe a quanto fatto per il filtro passa-basso, con l'opportuna differenza che lo sfasamento del segnale è questa volta positivo. Nella (\ref{F_trasf_alto}) è riportato il modulo della fuunzione di trasferimento.\\
+
+\begin{equation}\label{F_trasf_alto}
+\rvert H(f) \lvert = \frac{1}{\sqrt{1+(\frac{f_T}{f})^2}}
+\end{equation}
+
+Si riporta in Figura(\ref{fig:passa_alto}) un grafico \textit{bode} realizzato con TINA, in cui i valori del condensatore e della resistenza scelti sono quelli che che verranno utilizzati nella sezione successiva, e quindi: $R = 100 \si{kOhm}$, $C = 47 \si{nF}$, e $f_T = 33 \si{Hz}$.\\
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./passa_alto}
+\caption{Simulazione con Tina del funzionamento di un filtro passa-alto. Diagramma Bode.}
+\label{fig:passa_alto}
+\end{figure}
+
+
+
+
+\section{Filtri passa-banda capacitivi}
 Passiamo ora ad analizzare un filtro passa-banda capacitivo, composto da un filtro passa-basso collegato ad un filtro passa-alto. Riportiamo in Figura (\ref{fig:breadboard2_passabanda}) lo schema del circuito. \\
 
 Sappiamo già che per avere un buon funzionamento della serie dei filtri è necessario che l'impedenza (vista dalla resistenza da $ 1 k\Omega $ ) del ramo contenente il condensatore da $ 100 nF $ deve essere molto minore di quella del ramo contenente il filto passa alto. Simbolicamente questo corrisponde a scrivere la condizione:
@@ -214,7 +229,7 @@ Le frequenze di taglio dei filtri sono:\\
 \hline 
 \end{tabular} \\
 
-Poichè si tratta di una composizione di due filtri, lo sfasamento risulta essere la somma fra gli sfasamenti (uno è negativo e uno positivo), che in particolare risulta essere pari a zero per $f_0 = \sqrt{f_{T,A}f_{T,B}} $. Quindi, $f_0^{exp} = 232.11 \si{Hz}$, mentre quella interpolata graficamente dal diagramma \textsc{BODE} realizzato da \textsc{TINA}, è circa $230 \si{Hz}$. 
+Poichè si tratta di una composizione di due filtri, lo sfasamento risulta essere in prima battuta la somma fra gli sfasamenti (uno è negativo e uno positivo), che in particolare risulta essere pari a zero per $f_0 = \sqrt{f_{T,A}f_{T,B}} $. Quindi, $f_0^{exp} = 232.11 \si{Hz}$, mentre quella interpolata graficamente dal diagramma \textsc{BODE} realizzato da \textsc{TINA}, è circa $230 \si{Hz}$. 
 
 \begin{figure}
 \centering
@@ -234,6 +249,31 @@ Inoltre, per basse frequenze notiamo dei punti sperimentali sensibilmente scosta
 \label{fig:passabanda_sfasa_tina}
 \end{figure}
 
+\subsection{Homework 3}
+
+Per il filtro passa banda è possibile calcolare analiticamente la funzione di trasferimento. Facendo riferimento alla Figura \ref{fig:breadboard2_passabanda}, si ha per la legge dei nodi:
+\begin{equation}
+I_{in} = I_C + I_{CR}
+\end{equation}
+dove $I_{in}$ è la corrente che scorre lungo $R_1$, $I_C$ lungo $C_1$, $I_{CR}$ quella lungo l'altro ramo del parallelo. Se si indica con V la tensione al nodo fra $R_1$ e i due condensatori, si ha:
+\begin{equation}
+\frac{V_{in}-V}{Z_{R1}} = \frac{V}{Z_{C2}} + \frac{V}{Z_{C2}+Z_{R2}}
+\end{equation}
+mentre:
+\begin{equation}
+V_{out} = \frac{VZ_{R2}}{Z_{C2}Z_{R2}}
+\end{equation}
+da cui esplicitando i valori delle impedenze $Z_{Ri} = R_i$ e $Z_{Ci}=\frac{1}{j\omega C_i}$ si ottiene:
+\begin{equation}
+T(\omega) = \frac{j\omega C_1R_2}{(1+j\omega C_1R_2)(1+j\omega R_1C_1+\frac{j\omega C_2R_2}{1+j\omega C_2R_2})}.
+\end{equation}
+Per trovare la frequenza di massimo trasferimento, nel nostro caso si può sfruttare il fatto che $R_2 \gg R_1$, ottenendo:
+\begin{equation}
+T(\omega) = \frac{j\omega C_1R_2}{(1+j\omega C_1R_2)(1+j\omega R_1C_1)}.
+\end{equation}
+Massimizzando il logaritmo del modulo si ottiene $\omega _{max} = \frac{1}{\sqrt{R_1R_2C_1C_2}} \propto \frac{1}{\sqrt{R_2}}$.
+Per i componenti impiegati si ha $\omega _{max} = 218 Hz$. Dalla simulazione con TINA si ottiene 211 Hz, circa il 3 $\%$ più piccolo del valore calcolato, per cui l'approssimazione è abbastanza buona. \\
+Un dispositivo con bassa impedenza in ingresso potrebbe creare dei problemi poiché tale resistenza andando in parallelo con $R_2$ ed essendo questa molto maggiore, molta della corrente scorrerebbe nel dispositivo anziché in $R_2$ che pertanto si può trascurare, cambiando completamente la risposta del filtro. Se invece l'impedenza in ingresso del dispositivo è molto alta, esso non influenzerebbe molto il funzionamento del filtro, per cui la sua risposta rimarrebbe inalterata.
 
 \section{Circuito filtro passa-banda RLC serie}
 
@@ -276,7 +316,7 @@ La curva relativa al guadagno risulta piccata intorno al valore $f=7.35 kHz$, pe
 \paragraph{Es. 12}
 Dai valori della simulazione si ha che $f_0 = 7.34 kHz$, che nel grafico corrisponde al punto in cui si ha l'amplificazione massima, dunque $f_0$ rappresenta la frequenza di risonanza de circuito.\\
 Per capire come variasse l'ampiezza della curva in funzione dei parametri del circuito, abbiamo effettuato diverse simulazioni variando i valori dei componenti. I risultati sono raccolti in
-\ref{tab:tab1}:\\
+\ref{tab:tab1}.
 
 \begin{table}[htp]
 \caption{}
@@ -357,13 +397,17 @@ Abbiamo realizzato praticamente il circuito sulla breadboard, impiegando un resi
 \caption{Confronto dei dati sperimentali con l'andamento simulato. Gain in scala lineare}
 \end{figure}
 
-Come si vede, sebbene l'andamento del grafico sia simile a quello dei dati sperimentali, la frequenza di risonanza non corrisponde a quella osservata. Abbiamo imputato tale discrepanza ad un'eventuale imprecisione dei valori nominali dei componenti a disposizione, per cui abbiamo fatto varie simulazioni con TINA cambiando i valori di induttanza e capacità. Di seguito il confronto dei dati sperimentali con la simulazione in cui si è posto L = $4.8~mH$, C = $117 ~nF$ e la resistenza interna dell'induttore a 74 $\Omega$:
-
 \begin{figure}[htp]
 \centering
 \includegraphics[scale=.34]{graph4}
 \caption{Confronto dati sperimentali con andamento simulato con L = $4.8~mH$, C = $117 ~nF$ e resistenza interna dell'induttore a 74 $\Omega$. Gain in scala lineare}
+\label{last}
 \end{figure}
+
+Come si vede, sebbene l'andamento del grafico sia simile a quello dei dati sperimentali, la frequenza di risonanza non corrisponde a quella osservata. Abbiamo imputato tale discrepanza ad un'eventuale imprecisione dei valori nominali dei componenti a disposizione, per cui abbiamo fatto varie simulazioni con TINA cambiando i valori di induttanza e capacità. Si riporta il confronto dei dati sperimentali con la simulazione in cui si è posto L = $4.8~mH$, C = $117 ~nF$ e la resistenza interna dell'induttore a 74 $\Omega$.
+, in Figura (\ref{last}).
+
+
 
 Si vede come il grafico riproduce molto più fedelmente i dati sperimentali. I valori impiegati nelle simulazioni rientrano nelle incertezze nominali riportati nei data sheet dei vari componenti, per cui è ragionevole aspettarsi che il motivo per cui i dati sperimentali si discostano dal grafico simulato sia da ricercarsi in valori effettivi dei parametri dei componenti che seppur non coincidenti con i rispettivi valori nominali rientrino nelle incertezze indicate.
 

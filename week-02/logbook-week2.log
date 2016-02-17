@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 18:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  21 OCT 2015 13:16
 entering extended mode
 **logbook-week2.tex
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\week-02\logbook-week2.tex
@@ -1621,17 +1621,17 @@ File: fit_follower_1_21_2k_2k_22k.png Graphic file (type png)
 Package pdftex.def Info: fit_follower_1_21_2k_2k_22k.png used on input line 258
 .
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
-
-<fit_follower_1_21_2M_2k_22k.png, id=46, 578.16pt x 433.62pt>
+ [4 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_non-invertente_rgen_
+2mo.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_offset.png> <C:
+/Users/LorenzoLMP/Documents/TD2015-repo/week-02/bah.jpg>] <fit_follower_1_21_2M
+_2k_22k.png, id=52, 578.16pt x 433.62pt>
 File: fit_follower_1_21_2M_2k_22k.png Graphic file (type png)
 
 <use fit_follower_1_21_2M_2k_22k.png>
 Package pdftex.def Info: fit_follower_1_21_2M_2k_22k.png used on input line 283
 .
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
- [4 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_non-invertente_rgen_
-2mo.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_offset.png> <C:
-/Users/LorenzoLMP/Documents/TD2015-repo/week-02/bah.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
@@ -1641,11 +1641,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
-<CONVERTITORE.jpg, id=53, 344.28625pt x 228.855pt>
+<CONVERTITORE.jpg, id=53, 360.34625pt x 285.065pt>
 File: CONVERTITORE.jpg Graphic file (type jpg)
  <use CONVERTITORE.jpg>
 Package pdftex.def Info: CONVERTITORE.jpg used on input line 341.
-(pdftex.def)             Requested size: 137.71205pt x 91.54037pt.
+(pdftex.def)             Requested size: 144.13594pt x 114.02397pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 344--346
 
@@ -1669,23 +1669,22 @@ Package pdftex.def Info: convertitore_analysis_infinite.jpg used on input line
 22k.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/fit_follower_1_21_2
 M_2k_22k.png> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/CONVERTITORE.j
 pg> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/convertitore_analysis.jp
-g> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/convertitore_analysis_inf
-inite.jpg>]
-<newTINA.jpg, id=61, 492.84125pt x 321.2pt>
+g>]
+<newTINA.jpg, id=61, 442.65375pt x 337.26pt>
 File: newTINA.jpg Graphic file (type jpg)
  <use newTINA.jpg>
 Package pdftex.def Info: newTINA.jpg used on input line 368.
-(pdftex.def)             Requested size: 197.133pt x 128.47772pt.
+(pdftex.def)             Requested size: 177.05835pt x 134.9016pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
-<immagine3.png, id=62, 455.301pt x 280.4076pt>
-File: immagine3.png Graphic file (type png)
- <use immagine3.png>
-Package pdftex.def Info: immagine3.png used on input line 375.
-(pdftex.def)             Requested size: 227.64993pt x 140.20345pt.
+<immagine3.jpg, id=62, 548.0475pt x 337.26pt>
+File: immagine3.jpg Graphic file (type jpg)
+ <use immagine3.jpg>
+Package pdftex.def Info: immagine3.jpg used on input line 375.
+(pdftex.def)             Requested size: 219.2151pt x 134.9016pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
@@ -1697,122 +1696,144 @@ File: dido.jpg Graphic file (type jpg)
 Package pdftex.def Info: dido.jpg used on input line 387.
 (pdftex.def)             Requested size: 144.99034pt x 55.21828pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 \OT1/ptm/m/n/10 mas-si-ma in fun-zio-ne del-la tem-pe-ra-tu-ra, cur-va
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 401--402
+Underfull \hbox (badness 1383) in paragraph at lines 402--403
 \OT1/ptm/m/n/10 fun-zio-ne del-la tem-pe-ra-tu-ra e ca-pa-cit[]a del dio-do in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
 
  []
 
 <diodo.jpg, id=64, 364.36125pt x 177.66376pt>
 File: diodo.jpg Graphic file (type jpg)
  <use diodo.jpg>
-Package pdftex.def Info: diodo.jpg used on input line 411.
+Package pdftex.def Info: diodo.jpg used on input line 412.
 (pdftex.def)             Requested size: 145.74191pt x 71.06424pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--415
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
 <plotdiodosil.png, id=65, 578.16pt x 433.62pt>
 File: plotdiodosil.png Graphic file (type png)
  <use plotdiodosil.png>
-Package pdftex.def Info: plotdiodosil.png used on input line 420.
+Package pdftex.def Info: plotdiodosil.png used on input line 421.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
-<plotdiodores.png, id=66, 578.16pt x 433.62pt>
+[6 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/convertitore_analysis_inf
+inite.jpg> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/newTINA.jpg> <C:/
+Users/LorenzoLMP/Documents/TD2015-repo/week-02/immagine3.jpg> <C:/Users/Lorenzo
+LMP/Documents/TD2015-repo/week-02/dido.jpg> <C:/Users/LorenzoLMP/Documents/TD20
+15-repo/week-02/diodo.jpg>] <plotdiodores.png, id=69, 578.16pt x 433.62pt>
 File: plotdiodores.png Graphic file (type png)
- <use plotdiodores.png>
-Package pdftex.def Info: plotdiodores.png used on input line 429.
+
+<use plotdiodores.png>
+Package pdftex.def Info: plotdiodores.png used on input line 430.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
- [6 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/newTINA.jpg> <C:/Users/L
-orenzoLMP/Documents/TD2015-repo/week-02/immagine3.png> <C:/Users/LorenzoLMP/Doc
-uments/TD2015-repo/week-02/dido.jpg> <C:/Users/LorenzoLMP/Documents/TD2015-repo
-/week-02/diodo.jpg>] <plotdiodo_no_offset.png, id=71, 578.16pt x 433.62pt>
+ <plotdiodo_no_offset.png, id=70, 578.16pt x 433.62pt>
 File: plotdiodo_no_offset.png Graphic file (type png)
 
 <use plotdiodo_no_offset.png>
-Package pdftex.def Info: plotdiodo_no_offset.png used on input line 438.
+Package pdftex.def Info: plotdiodo_no_offset.png used on input line 439.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--443
+Underfull \hbox (badness 10000) in paragraph at lines 442--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
-<dati_Tina.png, id=72, 121.95563pt x 214.55156pt>
+<dati_Tina.png, id=71, 121.95563pt x 214.55156pt>
 File: dati_Tina.png Graphic file (type png)
  <use dati_Tina.png>
-Package pdftex.def Info: dati_Tina.png used on input line 450.
+Package pdftex.def Info: dati_Tina.png used on input line 453.
 (pdftex.def)             Requested size: 85.36833pt x 150.18506pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
-<plotdiodo_germanio_220k.png, id=73, 578.16pt x 433.62pt>
+[7 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodosil.png> <C:/Use
+rs/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodores.png> <C:/Users/Lorenzo
+LMP/Documents/TD2015-repo/week-02/plotdiodo_no_offset.png> <C:/Users/LorenzoLMP
+/Documents/TD2015-repo/week-02/dati_Tina.png>]
+<plotdiodo_germanio_220k.png, id=79, 578.16pt x 433.62pt>
 File: plotdiodo_germanio_220k.png Graphic file (type png)
 
 <use plotdiodo_germanio_220k.png>
-Package pdftex.def Info: plotdiodo_germanio_220k.png used on input line 462.
+Package pdftex.def Info: plotdiodo_germanio_220k.png used on input line 465.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
- [7 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodosil.png> <C:/Us
-ers/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodores.png> <C:/Users/Lorenz
-oLMP/Documents/TD2015-repo/week-02/plotdiodo_no_offset.png> <C:/Users/LorenzoLM
-P/Documents/TD2015-repo/week-02/dati_Tina.png>] [8
 
- <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodo_germanio_220k.png
->] (C:\Users\LorenzoLMP\Documents\TD2015-repo\week-02\logbook-week2.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 480.
+
+Overfull \hbox (131.80315pt too wide) in paragraph at lines 479--493
+[][] 
+ []
+
+
+Underfull \vbox (badness 6141) has occurred while \output is active []
+
+ [8 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-02/plotdiodo_germanio_220k.
+png>]
+(C:\Users\LorenzoLMP\Documents\TD2015-repo\week-02\logbook-week2.aux) ) 
 Here is how much of TeX's memory you used:
- 25767 strings out of 493921
- 575394 string characters out of 3147266
- 612111 words of memory out of 3000000
- 28628 multiletter control sequences out of 15000+200000
- 44938 words of font info for 97 fonts, out of 3000000 for 9000
+ 25775 strings out of 493921
+ 575459 string characters out of 3147266
+ 612127 words of memory out of 3000000
+ 28634 multiletter control sequences out of 15000+200000
+ 46704 words of font info for 99 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,12n,55p,788b,702s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/P
-rogram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logbook-week2.pdf (8 pages, 2159206 bytes).
+{C:/Prog
+ram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on logbook-week2.pdf (8 pages, 1977087 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

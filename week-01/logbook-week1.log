@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  11 OCT 2015 18:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.23)  21 OCT 2015 13:25
 entering extended mode
 **logbook-week1.tex
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\week-01\logbook-week1.tex
@@ -1295,29 +1295,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
  []
 
 
-Underfull \hbox (badness 6910) in paragraph at lines 59--66
-\OT1/ptm/m/n/10 Il cir-cui-to []e sta-to rea-liz-za-to sul-la bread-board co-me
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 93--94
+Underfull \hbox (badness 4205) in paragraph at lines 62--64
+\OT1/ptm/m/n/10 Abbiamo scel-to $\OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 = 2\OML/c
+mm/m/it/10 :\OT1/cmr/m/n/10 75\OML/cmm/m/it/10 V$\OT1/ptm/m/n/10 , do-po-dich[]
+e pri-ma di
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 62--64
+\OT1/ptm/m/n/10 col-le-ga-re la bread-board al-la sche-da ab-bia-mo ve-ri-fi-ca
+-to
+ []
+
+
+Underfull \hbox (badness 7796) in paragraph at lines 62--64
+\OT1/ptm/m/n/10 il cor-ret-to fun-zio-na-men-to del-la sche-da col-le-gan-do il
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 6016) in paragraph at lines 83--84
 []\OT1/ptm/m/n/10 Proseguendo il di-scor-so av-via-to du-ran-te la le-zio-ne
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 93--94
-\OT1/ptm/m/n/10 pre-ce-den-te, tra-mi-te un VI ap-po-si-to (NO-ME VI), si []e
+Underfull \hbox (badness 3364) in paragraph at lines 83--84
+\OT1/ptm/m/n/10 pre-ce-den-te, tra-mi-te un VI ap-po-si-to (bo-de[]ph.vi), si [
+]e
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 93--94
+Underfull \hbox (badness 5446) in paragraph at lines 83--84
 \OT1/ptm/m/n/10 ana-liz-za-to l'an-da-men-to del-la fun-zio-ne di tra-sfe-ri-me
 n-to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
@@ -1325,15 +1354,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 File: ./breadboard1_passabasso.png Graphic file (type png)
 
 <use ./breadboard1_passabasso.png>
-Package pdftex.def Info: ./breadboard1_passabasso.png used on input line 98.
+Package pdftex.def Info: ./breadboard1_passabasso.png used on input line 88.
 (pdftex.def)             Requested size: 226.79846pt x 143.12698pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
@@ -1341,7 +1370,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+Underfull \hbox (badness 10000) in paragraph at lines 105--113
 
  []
 
@@ -1350,97 +1379,120 @@ File: ./attenuaz_passa_basso_loglog.png Graphic file (type png)
 
 <use ./attenuaz_passa_basso_loglog.png>
 Package pdftex.def Info: ./attenuaz_passa_basso_loglog.png used on input line 1
-53.
+43.
 (pdftex.def)             Requested size: 277.20154pt x 207.89703pt.
 
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 153--154
+Overfull \hbox (25.20154pt too wide) in paragraph at lines 143--144
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--170
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 173--174
+Underfull \hbox (badness 2653) in paragraph at lines 163--164
 []\OT1/ptm/m/n/10 A que-sto pun-to, tra-mi-te il soft-ware \OT1/ptm/m/sc/10 TI-
 NA\OT1/ptm/m/n/10 , []e sta-to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--182
+Underfull \hbox (badness 10000) in paragraph at lines 165--172
 
  []
 
 [2 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/breadboard1_passabasso.pn
 g> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/attenuaz_passa_basso_logl
 og.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 2269) in paragraph at lines 186--188
+\OT1/ptm/m/n/10 il fil-tro passa-basso, con l'op-por-tu-na dif-fe-ren-za che lo
 
  []
 
-<./breadboard2_passabanda.png, id=27, 608.87476pt x 241.50224pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+<./passa_alto.jpg, id=27, 987.69pt x 536.0025pt>
+File: ./passa_alto.jpg Graphic file (type jpg)
+ <use ./passa_alto.jpg>
+Package pdftex.def Info: ./passa_alto.jpg used on input line 197.
+(pdftex.def)             Requested size: 226.79846pt x 123.0735pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+<./breadboard2_passabanda.png, id=28, 608.87476pt x 241.50224pt>
 File: ./breadboard2_passabanda.png Graphic file (type png)
 
 <use ./breadboard2_passabanda.png>
-Package pdftex.def Info: ./breadboard2_passabanda.png used on input line 203.
+Package pdftex.def Info: ./breadboard2_passabanda.png used on input line 218.
 (pdftex.def)             Requested size: 176.39923pt x 69.96751pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--216
+Underfull \hbox (badness 10000) in paragraph at lines 226--231
 
  []
 
-<./passabanda_sfasa_octave.png, id=28, 578.16pt x 433.62pt>
+<./passabanda_sfasa_octave.png, id=29, 578.16pt x 433.62pt>
 File: ./passabanda_sfasa_octave.png Graphic file (type png)
 
 <use ./passabanda_sfasa_octave.png>
-Package pdftex.def Info: ./passabanda_sfasa_octave.png used on input line 221.
+Package pdftex.def Info: ./passabanda_sfasa_octave.png used on input line 236.
 (pdftex.def)             Requested size: 277.20154pt x 207.89703pt.
 
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 221--222
+Overfull \hbox (25.20154pt too wide) in paragraph at lines 236--237
  [][] 
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 222--222
+Underfull \hbox (badness 3312) in paragraph at lines 237--237
 []\OT1/ptm/m/n/10 Figura 5: |Gra-fi-co del-l'at-te-nua-zio-ne e del-lo sfa-sa-m
 en-to
  []
 
-<./passabanda_sfasa_tina.png, id=29, 578.16pt x 433.62pt>
+[3 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/passa_alto.jpg> <C:/Users
+/LorenzoLMP/Documents/TD2015-repo/week-01/breadboard2_passabanda.png>]
+<./passabanda_sfasa_tina.png, id=33, 578.16pt x 433.62pt>
 File: ./passabanda_sfasa_tina.png Graphic file (type png)
 
 <use ./passabanda_sfasa_tina.png>
-Package pdftex.def Info: ./passabanda_sfasa_tina.png used on input line 232.
+Package pdftex.def Info: ./passabanda_sfasa_tina.png used on input line 247.
 (pdftex.def)             Requested size: 277.20154pt x 207.89703pt.
 
-Overfull \hbox (25.20154pt too wide) in paragraph at lines 232--233
+Overfull \hbox (25.20154pt too wide) in paragraph at lines 247--248
  [][] 
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 233--233
+Underfull \hbox (badness 3312) in paragraph at lines 248--248
 []\OT1/ptm/m/n/10 Figura 6: |Gra-fi-co del-l'at-te-nua-zio-ne e del-lo sfa-sa-m
 en-to
  []
@@ -1451,65 +1503,52 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 6 in font nullfont!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/breadboard2_passabanda.p
-ng> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/passabanda_sfasa_octave.
-png (PNG copy)> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/passabanda_s
-fasa_tina.png (PNG copy)>] <RLC.jpg, id=33, 428.60126pt x 252.945pt>
+<RLC.jpg, id=34, 428.60126pt x 252.945pt>
 File: RLC.jpg Graphic file (type jpg)
  <use RLC.jpg>
-Package pdftex.def Info: RLC.jpg used on input line 260.
+Package pdftex.def Info: RLC.jpg used on input line 300.
 (pdftex.def)             Requested size: 171.43745pt x 101.17621pt.
 
-<tinadiag.jpg, id=34, 548.0475pt x 538.01pt>
+<tinadiag.jpg, id=35, 548.0475pt x 538.01pt>
 File: tinadiag.jpg Graphic file (type jpg)
  <use tinadiag.jpg>
-Package pdftex.def Info: tinadiag.jpg used on input line 271.
+Package pdftex.def Info: tinadiag.jpg used on input line 311.
 (pdftex.def)             Requested size: 219.2151pt x 215.20018pt.
-
-Underfull \hbox (badness 5475) in paragraph at lines 277--280
-\OT1/ptm/m/n/10 dei pa-ra-me-tri del cir-cui-to, ab-bia-mo ef-fet-tua-to di-ver
--se
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--280
-
- []
-
-<tinadiagresint.jpg, id=35, 548.0475pt x 337.26pt>
+ [4 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/passabanda_sfasa_octave.
+png (PNG copy)> <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/passabanda_s
+fasa_tina.png (PNG copy)>] <tinadiagresint.jpg, id=39, 548.0475pt x 337.26pt>
 File: tinadiagresint.jpg Graphic file (type jpg)
- <use tinadiagresint.jpg>
-Package pdftex.def Info: tinadiagresint.jpg used on input line 345.
+
+<use tinadiagresint.jpg>
+Package pdftex.def Info: tinadiagresint.jpg used on input line 385.
 (pdftex.def)             Requested size: 219.2151pt x 134.9016pt.
-
-[4 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/RLC.jpg> <C:/Users/Lorenz
-oLMP/Documents/TD2015-repo/week-01/tinadiag.jpg> <C:/Users/LorenzoLMP/Documents
-/TD2015-repo/week-01/tinadiagresint.jpg>]
-<graph1.jpg, id=41, 562.1pt x 421.575pt>
+ <graph1.jpg, id=40, 562.1pt x 421.575pt>
 File: graph1.jpg Graphic file (type jpg)
- <use graph1.jpg>
-Package pdftex.def Info: graph1.jpg used on input line 356.
-(pdftex.def)             Requested size: 191.11147pt x 143.33359pt.
 
-<graph4.jpg, id=42, 562.1pt x 421.575pt>
+<use graph1.jpg>
+Package pdftex.def Info: graph1.jpg used on input line 396.
+(pdftex.def)             Requested size: 191.11147pt x 143.33359pt.
+ <graph4.jpg, id=41, 562.1pt x 421.575pt>
 File: graph4.jpg Graphic file (type jpg)
  <use graph4.jpg>
-Package pdftex.def Info: graph4.jpg used on input line 364.
+Package pdftex.def Info: graph4.jpg used on input line 402.
 (pdftex.def)             Requested size: 191.11147pt x 143.33359pt.
- [5 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/graph1.jpg> <C:/Users/Lo
-renzoLMP/Documents/TD2015-repo/week-01/graph4.jpg>]
+
+[5 <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/RLC.jpg> <C:/Users/Lorenz
+oLMP/Documents/TD2015-repo/week-01/tinadiag.jpg> <C:/Users/LorenzoLMP/Documents
+/TD2015-repo/week-01/tinadiagresint.jpg>] [6
+
+ <C:/Users/LorenzoLMP/Documents/TD2015-repo/week-01/graph1.jpg> <C:/Users/Loren
+zoLMP/Documents/TD2015-repo/week-01/graph4.jpg>]
 (C:\Users\LorenzoLMP\Documents\TD2015-repo\week-01\logbook-week1.aux) ) 
 Here is how much of TeX's memory you used:
- 25611 strings out of 493921
- 571782 string characters out of 3147266
- 612960 words of memory out of 3000000
- 28488 multiletter control sequences out of 15000+200000
+ 25620 strings out of 493921
+ 571933 string characters out of 3147266
+ 612985 words of memory out of 3000000
+ 28496 multiletter control sequences out of 15000+200000
  44946 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,12n,55p,847b,741s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,55p,719b,741s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Prog
 ram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
@@ -1526,9 +1565,9 @@ ourier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on logbook-week1.pdf (5 pages, 520803 bytes).
+Output written on logbook-week1.pdf (6 pages, 631009 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

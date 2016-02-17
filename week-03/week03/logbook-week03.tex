@@ -1,0 +1,596 @@
+%\documentclass[a4paper]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[italian]{babel}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{hyperref}
+%\usepackage{amsthm}
+%\usepackage{graphicx}
+\documentclass[journal, a4paper]{IEEEtran}
+\usepackage[italian]{babel}
+\usepackage{booktabs}
+\usepackage{siunitx}%Questo serve a caricare il pacchetto delle unità di misura del sistema internazionale%
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{gensymb}
+
+\usepackage{keyval}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{authblk}
+%\usepackage{hyperref}
+
+\begin{document}
+
+
+% Define document title and author
+	\title{Tecnologie Digitali - Logbook Week 3}
+	\author[1]{Salvatore Bottaro}
+		\author[2]{Lorenzo M. Perrone}
+		\affil[1]{\texttt{salvo.bottaro@hotmail.it}}
+		\affil[2]{\texttt{lorenzo.perrone.lmp@gmail.com}}
+	\markboth{Tecnologie Digitali - Di Lieto}{}
+	\maketitle
+	
+\begin{abstract}
+	Logbook di laboratorio di Tecnologie Digitali, a.a. 2015/2016. Week 3.
+\end{abstract}
+
+\section{Come si può chiamare?}
+
+In un modello ideale di op-amp si presuppne un guadagno a ciclo aperto A (\textit{open loop gain}) infinito. Nei dispositivi reali ovviamente tale parametro è finito e dell'ordine di $10^5 - 10^6$. Il modello di op-amp reale cui si fa riferimento è quello in figura \ref{fig:op-amp-real}.
+
+\begin{figure}[htp]
+\includegraphics[scale=0.4]{op-amp_real}
+\caption{Modello di op-amp reale.}
+\label{fig:op-amp-real}
+\end{figure}
+~\\
+$R_{in}$ e $R_{out}$ sono rispettivamente l'impedenza in ingresso e in uscita all'op-amp.
+ 
+\subsection{Hm. 1}
+Nel modello ideale si ha $R_{in}$ infinita e $R_{out}$ nulla, mentre per un op-amp reale come il $\mu$A741 il datasheet riporta $R_{in} = 2~ M\Omega$ e $R_{out} = 75 ~\Omega$.\\
+
+Dato che l'open loop gain è finito, si ha che il guadagno in configurazione non-invertente non è più:
+\begin{equation}
+G_{ideal} = \frac{R_1+R_2}{R_1}
+\end{equation}
+
+Ma: 
+\begin{equation}
+G_{real} = \frac{A}{1+\frac{A}{G_{ideal}}}
+\end{equation}
+
+\subsection{Hm. 2}
+Rispetto al guadagno ideale si ha, posto $R_1 = 100 ~ \Omega, R_2 = 10~k\Omega, A \approx 10^5$:
+\begin{equation}
+G_{real}=G_{ideal}~\frac{1}{1+\frac{G_{ideal}}{A}} \approx G_{ideal}~(1-\frac{G_{ideal}}{A}).
+\end{equation}
+Per cui si ha un errore di circa lo $0.1 \%$ per i valori fissati.
+
+\section{Larghezza di banda}
+
+In figura \ref{fig:tina_par} sono elencati i parametri del modello di op-amp reale di TINA.\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.6]{tina_parameters_opamp}
+\caption{Elenco dei parametri di TINA per un op-amp $\mu$A741 reale.}
+\label{fig:tina_par}
+\end{figure}
+
+Si nota come TINA fornisce come valore di open loop gain  A = 200k. I valori delle impedenze in ingresso e in uscita corrispondono con quelli dichiarati nel datasheet. Come input offset voltage, TINA fornisce di default 2 mV che rientra nei limiti 1-6 mV del datasheet. La massima slew rate di TINA corrisponde ai 0.5 $\frac{V}{\mu s}$. I valori della frequenza al primo e al secondo polo sono rispettivamente 5 Hz e 1 MHz; quelli riportati nel datasheet si deducono dal grafico di figura \ref{fig:openloop} e risultano essere circa 4 Hz e 1 MHz.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.4]{open_loop_gain}
+\caption{Grafico dell'open loop gain del $\mu$A741 tratto dal datasheet.}
+\label{fig:openloop}
+\end{figure}
+
+Abbiamo disegnato con TINA il circuito in figura \ref{fig:tinaes2}.
+
+\begin{figure}[htp]
+\includegraphics[scale=0.4]{tina_es2}
+\caption{Circuito realizzato con TINA. I valori delle resistenze sono quelli impiegati successivamente nel corso dell'esperienza.}
+\label{fig:tinaes2}
+\end{figure}
+
+Il diagramma di Bode restituito dall' AC transfer characteristic è quello di figura \ref{fig:tina_es2_bode}.
+
+\begin{figure}[htp]
+\includegraphics[scale=0.4]{tina_es2_bode}
+\caption{Diagramma di Bode del circuito di figura \ref{fig:tinaes2}.}
+\label{fig:tina_es2_bode}
+\end{figure}
+
+Dalla simulazione si ha che il guadagno a basse frequenza è 39.81 dB, che corrisponde a quello previsto in base alle resistenze scelte. La frequenza di taglio prevista, quella in cui il guadagno scende di 3 dB, è 10.27 kHz, mentre la $f_{\frac{1}{2}}$, quella in cui il guadagno diminuisce di 6 dB, è 17.8 kHz, circa $\sqrt{3}~f_T$, relazione che si riscontra per i filtri passa basso.
+
+\subsection{Hm. 3}
+Abbiamo effettuato diverse prove modificando i vari parametri di TINA. Abbiamo riscontrato che la frequenza di taglio dipende in misura maggiore dall' open loop gain e, come è emerso dalla discussione di laboratorio
+%Lo, dobbiamo specificarlo secondo te?
+, anche dalla frequenza del polo dominante. Dalle prove fatte emerge infatti che vi è proporzionalità diretta fra frequenza di polo dominante e frequenza di taglio e anche fra open loop gain e frequenza di taglio. La frequenza al secondo polo non sembra essere mlto influente poiché variando anche di ordini di grandezza la frequenza al secondo polo, la frequenza di taglio cambia solo di poche centinaia di kHz con dipendenza inversa.
+
+\section{Analisi del generatore ATTEN}
+
+Per verificare le regioni di frequenza, di ampiezza e di offset in cui il generatore fornisce segnali corretti abbiamo naturalmente effettuato diverse prove variando i precedenti parametri.
+Quello che abbiamo riscontrato è che nello spettro di interesse il generatore fornisce segnali puliti finché l'ampiezza picco-picco è più grande di 10-20 mV e l'offset \textit{preset} in modulo minore degli 8-9 V. In figura \ref{fig:prova_gen_10khz_100mpp} e \ref{fig:prova_gen_15khz_50mpp} vi sono rappresentati i grafici di segnali "puliti" generati dal generatore.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.4]{prova_gen_10khz_100mpp}
+\caption{Segnale a 10 kHz, 100 mV pp e offset nullo.}
+\label{fig:prova_gen_10khz_100mpp}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.4]{prova_gen_15khz_50mpp}
+\caption{Segnale a 15 kHz, 50 mV pp e offset nullo.}
+\label{fig:prova_gen_15khz_50mpp}
+\end{figure}
+
+In figura \ref{fig:prova_gen_10khz_10mpp} e \ref{fig:sballato} si possono osservare invece segnali non perfettamente sinusoidali.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.4]{prova_gen_10khz_10mpp}
+\caption{Segnale a 10 kHz, 10 mV pp.}
+\label{fig:prova_gen_10khz_10mpp}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.4]{sballato}
+\caption{Segnale a 10 kHz, 1 V pp e 10 V di offset.}
+\label{fig:sballato}
+\end{figure}
+
+
+In figura \ref{fig:sballato} si osserva come per i valori scelti di ampiezza pp e di offset il generatore non riesca a produrre il segnale impostato. In figura \ref{fig:circuit} si può osservare lo schema di funzionamento del generatore, in particolare si vede come l'\textit{output attenuation} sia legata anche all'amplificatore di potenza e di ampiezza, per cui evidentemente quando ci si spinge al limite dell'offset, non viene solo attenuato quest'ultimo ma in qualche misura anche il segnale oscillante.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.4]{circuit}
+\caption{Schema di funzionamento del generatore ATTEN}
+\label{fig:circuit}
+\end{figure}
+
+\section{Analisi in frequenza con il generatore esterno}
+
+Abbiamo collegato il cavo BNC del generatore sia alla CB33 che alla CB68 e avviato l'acquisizione con il VI $BODE\_ATTEN$. I dati restituiti a 100k samples al secondo sono mostrati in figura \ref{fig:ampli100000}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.3]{subplots_errors_amplitude100000}
+\caption{Gain e sfasamento a 100000 campionamenti al secondo.}
+\label{fig:ampli100000}
+\end{figure}
+
+Come ci si aspettava i punti relativi al guadagno, quindi al rapporto fra le ampiezze del segnale ai due ingressi della DAQ, è compatibile con 1, mentre si osserva un andamento lineare dello sfasamento con la frequenza. Abbiamo ripreso le misure con 200k samples al secondo ottenendo i dati di figura \ref{fig:ampli200000}. 
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.3]{subplots_errors_amplitude200000}
+\caption{Gain e sfasamento a 200000 campionamenti al secondo.}
+\label{fig:ampli200000}
+\end{figure}
+
+I dati relativi al gain sono simili al caso precedente mentre per lo sfasamento si osserva ancora un andamento lineare con pendenza dimezzata. Ulteriori prove con frequenze di campionamento superiori presentavano lo stesso andamento sia per il gain che per lo sfasamento.\\
+L'osservazione dei dati sperimentali ha suggerito per lo sfasamento una formula del tipo:
+\begin{equation}
+\Delta \varphi  = \Delta t ~ f
+\end{equation}
+con:
+\begin{equation}
+\Delta t = \frac{\alpha}{f_c}
+\end{equation}
+dove $f_c$ è la frequenza di campionamento. Abbiamo determinato il parametro $\alpha$ tramite fit ottenendo i risultati in tabella \ref{tab:alpha}.\\
+
+\begin{figure}[htp]
+\centering
+\caption{Parametro $\alpha$}
+\begin{tabular}{|c|c|}
+\hline 
+$f_c$ & $\alpha$ \\ 
+\hline 
+100k & 179.97 $\pm$ 0.11 \\ 
+\hline 
+200k & 179.6 $\pm$ 0.3 \\ 
+\hline 
+\end{tabular} 
+\label{tab:alpha}
+\end{figure}
+
+Come si vede i due risultati sono compatibili con 180, per cui $\alpha$ può essere interpretato come parametro di rinormalizzazione in gradi.\\
+La ragione di tale comportamento sta nel fatto che i due analog input della scheda non leggono il segnale contemporaneamente, ma come si può leggere dal block diagram del VI prima viene letta la CB68 e dopo un certo intervallo di tempo la CB33, giustificando lo sfasamento proporzionale alla frequenza come è esemplificato in figura \ref{fig:deltat}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.55]{deltat}
+\caption{Schema esplicativo dell'andamento dello sfasamento in funzione della frequenza}
+\label{fig:deltat}
+\end{figure}
+
+Per spiegare l'andamento del coefficiente angolare noi abbiamo supposto che all'aumentare della frequenza di campionamento si riducesse il tempo di switch fra le due porte. Di fatti questo è effettivamente corretto nel range di frequenze che abbiamo esplorato noi. In generale però la scheda di acquisizione è programmata per effettuare lo switch fra le due porte sempre nello stesso intervallo di tempo, circa 5 $\mu s$, anche se la frequenza di campionamento è tale che il tempo fra un campionamento e l'altro e più grande di tale intervallo. Tuttavia quando ci si spinge a frequenze di campionamento elevate, la scheda si adatta riducendo il tempo di switch fra le due porte, che è quello che abbiamo osservato noi. Pertanto se ci fossimo spinti a frequenze di campionamento molto basse avremmo dovuto osservare che per frequenze inferiori ad una certa soglia il coefficiente angolare non dipendeva dalla frequenza di campionamento.\\
+
+Per quanto riguarda comunque le frequenze da noi analizzate è possibile fornire un algoritmo correttivo per lo sfasamento che si legge nella seguente espressione:
+\begin{equation}
+\label{eqn:alg}
+\Delta \varphi ' = \Delta \varphi - \alpha ~ \frac{f}{f_c}
+\end{equation}
+Abbiamo applicato tale algoritmo ai dati precedentemente analizzati ottenendo i grafici in figura \ref{fig:suberr}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.3]{subplots_errors}
+\caption{Fase corretta tramite l'algoritmo \ref{eqn:alg}}
+\label{fig:suberr}
+\end{figure}
+
+Gli errori sono stati ottenuti propagando quelli nell'espressione \ref{eqn:alg} e prendendo come errore sulla frequenza $\Delta f = max(5~10^{-5}~f, 40 mHz)$. Il fatto che gli errori aumentassero con la frequenza è stato ritenuto da noi ragionevole perché all'aumentare della frequenza il numero di punti per periodo del segnale diminuisce, il che comporta una maggiore imprecisione nella determinazione della fase. Si noti tuttavia che gli errori rimangono sempre nell'ordine del centesimo di grado. Fittando con rette orizzontali è risultato che per entrambi i grafici le rette fossero compatibili con $ \Delta \varphi =0$.
+
+\section{Analisi in frequenza del circuito con op-amp}
+
+Avendo analizzato a fondo il comportamento del generatore esterno di funzioni, trovando sperimentalmente gli intervalli di frequenza e di tensione in cui aspettarci un buon comportamento ed un segnale piuttosto pulito, abbiamo impostato una frequenza di $230 \si{Hz}$, ed una tensione picco-picco $V_{PP} = 100 \si{mV}$, associati ad un offset \textit{preset} pari a $OFF = -4.60 \si{V}$: si è visto che questo corrisponde ad un offset "effettivo" di $46 \si{mV}$ (l'1\% del valore \textit{preset}), e a queste tensioni è associata un'incertezza di circa $3/4 \si{mV} $. \\
+Per queste impostazioni il segnale in uscita non satura il fondoscala da $10 \si{V}$ della nostra \textsc{daq}, e l'offset interno dell'op-amp è compensato il meglio possibile.\\
+
+{
+\centering
+\begin{tabular}{|c|c|}
+\hline  &  \textbf{Dati sperimentali G100} \\ 
+\hline $R_1$ (k$\Omega$) &  1.03 $\pm$ 0.8 \% \\ 
+\hline $R_2$ (k$\Omega$) & 99.8 $\pm$ 0.8 \%  \\ 
+\hline Second Pole (MHz) & 1   \\ 
+\hline Open loop gain & 200k    \\ 
+\hline $V_{PP}$ & $100  \pm 3 \si{mV} $ \\ 
+\hline G &  $G_{exp}(G_{exp}^{\beta})  = 97 \pm 1 (97) \, G_{meas} = 97 \pm 2 $ \\ 
+\hline $f_T (kHz)$ &  8.77 $\pm$ 0.09 \\
+\hline $f_{\frac{1}{2}} (kHz)$ &  15.14 $\pm$ 0.16 \\
+\hline $G*f_{T}$ \si{kHz} & $ 850 \pm 30 $\\
+\hline
+\label{tab g100}
+\end{tabular} 
+
+}
+
+A questo punto è stato realizzato il circuito in modo tale che il guadagno nominale fosse circa 100, ed è stato tracciato un diagramma di Bode del gain e degli sfasamenti. Si riportano in (\ref{tab g100}) i parametri del circuito con le resistenze scelte e i valori delle grandezze tipiche $f_T, f_{1/2}, G, G \, f_T$. In figura (\ref{fig:es_8_bode_diag}) è mostrato il diagramma di BODE  del G-100, così come acquisito dal VI.\\
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./es_8_bode_diag}
+\caption{Diagramma di BODE - G100}
+\label{fig:es_8_bode_diag}
+\end{figure}
+
+
+Si noti il confronto con tabella (\ref{Seconda TINA}) dei valori ottenuti tramite la seconda simulazione con TINA, e il notevole accordo con i dati sperimentali.\\
+
+{
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+Grandezza & Risultati seconda simulazione TINA\\ 
+\hline 
+$R_1$ (k$\Omega$)& 1.03  \\ 
+\hline 
+$R_2$ (k$\Omega$) & 99.8 \\ 
+\hline 
+Second Pole (MHz) & 1 \\ 
+\hline
+Open loop gain & 171k\\
+\hline 
+$f_T (kHz)$ & 8.77 \\ 
+\hline 
+$f_{\frac{1}{2}} (kHz)$ & 15.2 \\ 
+\hline 
+Max Gain & 97.84 \\ 
+\hline
+\label{Seconda TINA}
+\end{tabular}
+
+}
+
+Introduciamo ora l'algoritmo presentato nella sezione precedente per la correzione degli sfasamenti introdotta dalla routine di acquisizione della scheda DAQ in nostro possesso. L'andamento che ci si aspetta per un circuito amplificante a feedback negativo è mostrato nella figura (\ref{fig:horowitz_bode}) tratta dal manuale %\bibitem{M06}. 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./horowitz_bode}
+\caption{BODE diagram tratto dall'Horowitz - Gain e sfasamenti attesi}
+\label{fig:horowitz_bode}
+\end{figure}
+
+
+E' interessante notare come per frequenze anche superiori a $10 \, f_T$ lo sfasamento non diventi mai maggiore (in modulo) di $-90 \degree$, e che in generale, fino alla frequenza del secondo polo, questo non superi mai $180 \degree$ (in modulo) dato che ciò produrrebbe un feedback con interferenza positiva sull'ingresso non invertente \textsc{in+}. In particolare, la differenza fra $180 \degree$ e il $\Delta _{f=f2}$, con $f_2$ frequenza di secondo polo, è detta "\textit{phase margin}", ed è un parametro costruttivo dell'integrato.\\
+
+Con l'introduzione dell'algoritmo si può vedere subito che l'andamento degli sfasamenti ricalchi piuttosto fedelmente quello aspettato. Il BODE diagram G-100 "corretto" è mostrato in figura (\ref{fig:es_8_bode_diag_sfasacorr}), e d'ora in poi le fasi mostrate saranno quelle corrette.\\
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./es_8_bode_diag_sfasacorr}
+\caption{BODE Diagram - G100con sfasamenti corretti tramite l'algoritmo introdotto in precedenza}
+\label{fig:es_8_bode_diag_sfasacorr}
+\end{figure}
+
+{
+\centering
+\begin{tabular}{|c|c|}
+\hline  &  \textbf{Dati sperimentali G300} \\ 
+\hline $R_1$  &  98 \si{Ohm} + 1.03 \si{kOhm} ($\pm$ 0.8 \%) \\ 
+\hline $R_2$ & 353 \si{kOhm} $\pm$ 0.8 \%  \\ 
+\hline $V_{PP}$ & $50  \pm 3 \si{mV} $ \\ 
+\hline $V_{OFF} preset$ & $ -46  \si{mV} $ \\
+\hline G &  $G_{exp}  = 312 \pm 9  \, G_{meas} = 327 \pm 2 $ \\ 
+\hline $f_T (kHz)$ &  2.68 $\pm$ 0.05 \\
+\hline $G*f_{T}$ \si{kHz} & $ 880 \pm 30 $\\
+\hline
+\end{tabular}
+ 
+}
+
+
+Continuiamo le acquisizioni tramite il VI \textsc{bode-atten} per verificare il comportamento del nostro op-amp, scegliendo delle resistenze tali da avere un gain di circa 300 e di circa 500. Sono riportate in successione le tabelle con i valori dei parametri dei circuiti e i BODE diagram. \\
+
+
+{
+\centering
+\begin{tabular}{|c|c|}
+\hline  &  \textbf{Dati sperimentali G500} \\ 
+\hline $R_1$  &  98 \si{Ohm} + 1.03 \si{kOhm} ($\pm$ 0.8 \%) \\ 
+\hline $R_2$ & 353 \si{kOhm} + 217  \si{kOhm} $\pm$ 0.8 \%  \\ 
+\hline $V_{PP}$ & $ 30  \pm 3 \si{mV} $ \\ 
+\hline $V_{OFF} preset$ & $ -46  \si{mV} $ \\
+\hline G &  $G_{exp}  = 510 \pm 20  \, G_{meas} = 540 \pm 2 $ \\ 
+\hline $f_T (kHz)$ &  1.64 $\pm$ 0.04 \\
+\hline $G*f_{T}$ \si{kHz} & $ 880 \pm 30 $\\
+\hline
+\end{tabular} 
+
+}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./es_9_bode_g300}
+\caption{BODE diagram per il G300. L'intervallo di frequenze esplorato è più stretto degli altri grafici, vedi testo.}
+\label{fig:es_9_bode_g300}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./es_9_bode_g500}
+\caption{BODE Diagram G500}
+\label{fig:es_9_bode_g500}
+\end{figure}
+
+
+
+Sono d'obbligo due precisazioni:
+
+\begin{itemize}
+\item Per il G300, i punti sperimentali mostrati fanno riferimento ad un intervallo delle frequenze $2 \si{kHz} - 20 \si{kHz}$. Questa è la conseguenza del fatto che per ogni configurazione $G\sim$ sono state effettuate due diverse acquisizioni, la prima in un range molto ampio $100 \si{Hz} - 20 \si{kHz}$, con cui si sono stimate le frequenze caratteristiche, seguita da una seconda acquisizione concentrata nell'intervallo attorno la frequenza di taglio in modo da raffinare la misura. A causa di una nostra sbadatezza per il G-300 la prima serie è stata inavvertitamente cancellata, ma è evidente che i valori riportati nella tabella sono stati misurati propriamente.
+
+\item Per ogni configurazione, è stato calcolato il prodotto $ G \, f_T$, che per gli op-amp compensati è una costante costruttiva che identifichiamo con la frequenza del secondo polo, quella a cui, cioè, termina l'andamento costante di $-20 \si{dB} $ per decade, e a cui il gain è unitario (\textsc{UGBW}). I tre valori ottenuti segnalano una tendenza lievemente crescente all'aumentare del gain, pur coincidendo nei limiti dell'errore.
+\end{itemize}
+
+Nella tabella seguente sono riportati i valori stimati della frequenza di taglio stimata, tramite il prodotto  $ G \, f_T$, per G1000 e G1. Quest'ultimo valore è ovviamente il \textsc{UGBW} come definito prima. 
+
+{
+\centering
+\begin{tabular}{|c|c|}
+\hline G & $f_{T}$ \\ 
+\hline 1000 &  $850 \si{Hz}$\\ 
+\hline 1  &   $8.50 \si{kHz}$ \textbf{\textsc{UGBW}}\\ 
+\hline 
+\end{tabular}
+
+} 
+
+In base al grafico in figura (\ref{fig:openloop}) tratto dal datasheet dell'op-amp %\bibitem{HOP96}
+, la frequenza del secondo polo è pari circa a $1 \si{MHz}$, un valore non troppo dissimile da quello da noi ottenuto.
+
+
+
+\subsection{Homework 5 - Analisi di un op-amp reale}
+
+Utilizzando il modello semplificato di op-amp presentato a lezione, e riportato in figura (\ref{fig:op-amp-real}), è possibile ricavare delle espressioni per le resistenze effettive di ingresso e di uscita $R_{in}$ e $R_{out}$ del componente, così come il guadagno effettivo in presenza di amplificazione A finita (diversamente dal modello di op-amp ideale), sia in configurazione invertente che non-invertente. A partire da queste relazioni, possiamo annotare dei suggerimenti per l'uso in modo da ottenere buone performance dall'integrato.\\
+
+Partiamo dal calcolo della resistenza effettiva di ingresso nel caso della configurazione non-invertente (vedi Figura (\ref{fig:op-amp-non-inv})).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./op-amp-non-inv}
+\caption{Circuito amplificante con op-amp in configurazione non invertente, modello "reale"}
+\label{fig:op-amp-non-inv}
+\end{figure}
+
+
+Scriviamo, per prima cosa, le seguenti relazioni facilmente ottenibili percorrendo il ramo di \textit{feedback}:
+
+\begin{equation}
+V_{out} = A \, v_G - R_{out}I_{out}
+\end{equation} 
+
+\begin{equation}
+v_G = V_{in} - V_{out} + R_2 I_{out}
+\end{equation}
+
+Che utilizziamo per eliminare la corrente $I_{out}$ e scrivere:
+
+\begin{equation}
+V_{out} = \frac{(A-\frac{R_{{out}}}{R_2})v_G + \frac{R_{out}}{R_2}V_{in}}{1 + \frac{R_{out}}{R_2}}
+\end{equation}
+
+A questo punto, guardando nel ramo che esce dall'op-amp e finisce a massa, notiamo la presenza di un partitore di tensione composto dalle resistenze $R_1$ e $R_2$, che ci permette di dire che $V_R$ (come definito in figura) è $V_R = \frac{R_1}{R_1 + R_2}V_{out}$. E infine, dato che $v_G = V_{in} - V_{R}$, con qualche passaggio dalle precedenti si ricava (chiamiamo per semplicità $\epsilon = R_{out}/R_2$, quantità generalmente piccola):
+
+\begin{equation}
+I_{in} = \frac{v_G}{R_{in}} =  \frac{1}{R_{in}} \frac{V_{in}(1-\frac{B\epsilon}{1+ \epsilon})}{1 + \frac{B(A-\epsilon)}{1+\epsilon}} = \frac{V_{in}}{R_{in}^{'}}
+\end{equation}
+
+Dove $B = \frac{R_1}{R_1 + R_2}$. Sviluppando al primo termine in $\epsilon$ si ottiene che $ R_{in}^{'} = R_{in} (1 + BA + \epsilon B (1+BA-A))$, che per $A$ molto grande tende a $\infty$.\\
+
+Per ricavare la resistenza effettiva di ingresso per il circuito non invertente procediamo, invece, nel seguente modo: partiamo dal circuito presentato di seguito (si veda Figura (\ref{fig:op-amp-invert}) )e lo vediamo come costituito da due parti, una composta dalla resistenza $R_1$ a cui viene inviato il segnale di ingresso, e l'altra da tutto l'op-amp e il circuito amplificante; in questo modo le due parti sono collegate in serie. Guardando dalla giunzione verso il circuito di feedback scriviamo che:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./op-amp-invert}
+\caption{Circuito con amp-amp in configurazione invertente - modello "reale"}
+\label{fig:op-amp-invert}
+\end{figure}
+
+
+\begin{equation}
+R_2 = \frac{v - (-V_{out})}{I_2}
+\end{equation}
+
+\begin{equation}
+V_{out} = Av - R_{out}I_2
+\end{equation}
+
+Da cui:
+
+\begin{equation}
+\frac{v}{I_2} = \frac{R_2 + R_{out}}{1 + A}
+\end{equation}
+
+A questa resistenza "effettiva" sommiamo quindi $R_1$, e cioè l'impedenza della prima parte del circuito. Complessivamente, in buona approssimazione, possiamo dire che $R_{in}^{out} = R_1 + \frac{R_2 + R_{out}}{1 + A}$ per l'invertente, che in particolare diventa circa $R_1$ per alti valori di A.
+
+Passiamo ora alle resistenze effettive di output, che si possono calcolare allo stesso modo per entrambe le configurazioni considerando circuito amplificante generico come in figura FIGURA. Supponiamo, dunque, di mettere $V_{in}$ a terra e di fornire solo una tensione $V$ sull'output: tale tensione produce una tensione differenziale sugli ingressi di $v_D = -\frac{R_1}{R_1 + R_2}V = -BV$, che a sua volta viene amplificata di un fattore A dall'integrato. Calcolando le cadute di potenziale nel ramo uscente dall'op-amp otteniamo:
+
+\begin{equation}
+I_{out} = \frac{V-Av_D}{R_{out}} = \frac{V(1+AB)}{R_{out}}
+\end{equation}
+
+Da cui:
+
+\begin{equation}
+R_{out}^{'} = \frac{R_{out}}{1+\frac{AR_1}{R_1 + R_2}}
+\end{equation}
+
+Ricaviamo, infine, le espressioni per il closed-loop gain con amplificazione finita. Partiamo dall'amplificatore non invertente, facendo riferimento al disegno (DISEGNO): la tensione differenziale fra i due ingressi è $v_D = V_{in} - BV_{out}$, che viene amplificata di un fattore A in modo che $Av_D = A(V_{in} - BV_{out}) = V_{out}$, da cui scriviamo:
+
+\begin{equation}
+G = \frac{V_{out}}{V_{in}} = \frac{A}{1+AB}
+\end{equation}
+
+Per l'amplificatore invertente occorre, invece, un po' più di fatica: scriviamo alcune relazioni utili.
+
+\begin{equation}
+\begin{cases}
+ v - (-V_{out}) = R_2\, I_{out} \\
+ I_1 - I_{out} - I_{in} = 0\\
+ v - R_{in} \, I_{in} = 0\\
+ V_{in} - R_1 \, I_1 = v\\
+\end{cases}
+\end{equation}
+
+Dalla seconda e la terza si scrive immediatamente che $v - R_{in} (I_1 - I_{out}) = 0$, che sostituita nella quarta (al posto di $I_1$) dà:
+
+\begin{equation}
+V_{in} - R_1 (I_{out} + \frac{v}{R_{in}}) = v
+\end{equation}
+
+e eliminando $I_{out}$ tramite la prima, riarrangiando i termini otteniamo:
+
+\begin{equation}
+v (1 + \frac{R_1}{R_2} + \frac{R_1}{R_{in}}) = V_{in} - \frac{R_1}{R_2}V_{out}
+\end{equation}
+
+Non abbiamo, però, ancora usato il fatto che, secondo il modello in esame $V_{out} = A\, v - R_{out}\, I_{out}$, che ci permette di eliminare $v$ nell'ultima relazione e scrivere finalmente (chiamando come prima $\epsilon = R_{out}/R_2$):
+
+\begin{equation}
+G = \frac{V_{out}}{V_{in}} = \frac{A- \epsilon}{1 + \epsilon}(\frac{1}{1 + \frac{R_1}{R_2}(1 + \frac{A-\epsilon}{1 + \epsilon}) + \frac{R_1}{R_{in}}})
+\end{equation}
+
+Sappiamo che in tutta onestà nessuno crederebbe che questo sia il risultato giusto, ma per guadagnare la fiducia del lettore è sufficiente porre $\epsilon = 0$ e trascurare i termini in $R_{in}$ per ricondurci alla formula riportata dall'Horowitz (dove, appunto, tali termini vengono trascurati fin dall'inizio), e facendo qualche manipolazione algebrica vediamo che:
+
+\begin{equation}
+G \simeq \frac{A}{1 + \frac{R_1}{R_2} + \frac{R_1}{R_2}A} = \frac{A}{1 + \frac{R_1}{R_2}}\frac{1}{1 + \frac{R_1}{R_1 + R_2}A} = A \frac{\frac{R_2 \, B}{R_1}}{1 + A\,B}
+\end{equation}
+
+che è proprio uguale al $G = -A(1-B)/(1 + AB)$ riportato sul testo, a meno di un segno negativo di cui francamente, dopo tutta questa fatica, ci importa poco.
+
+\subsection{Hm. 4}
+
+Abbiamo fatto un'analisi simile a quella di Hm. 2 con il gain 500 dal momento che per il gain 300 non avevamo a disposizione i dati a basse frequenze. In figura \ref{fig:gain500nonsim} si riporta il confronto con i dati sperimentali e la simulazione in cui si è posto 200k come open loop gain. Si può notare come il gain massimo misurato sia significativamente diverso da quello calcolato in base alle resistenze impiegate. Inoltre la frequenza di taglio della simulazione risulta essere 1.95-2.00 kHz mentre quella misurata (1.64 $\pm$ 0.04) kHz.
+
+\begin{figure}[htp]
+\includegraphics[scale=.4]{hm4comparisons_nonsim}
+\caption{Confronto simulazione- dati sperimentali per il gain 500 con 200k di open loop gain.}
+\label{fig:gain500nonsim}
+\end{figure}
+
+Modificando l'open loop gain dell'op-amp di TINA da 200k a 171k si ottiene il grafico di figura \ref{fig:gain500sim}. Si nota come ancora il gain massimo non corrisponda, però si ha un maggiore accordo ad alte frequenze. Inoltre la fequenza di taglio per questa simulazione vale 1.69 kHz, in perfetto accordo con quella misurata.\\
+
+\begin{figure}[htp]
+\includegraphics[scale=.4]{hm4comparisons_sim}
+\caption{Confronto simulazione- dati sperimentali per il gain 500 con 171k di open loop gain.}
+\label{fig:gain500sim}
+\end{figure}
+
+\subsection{Grafico inatteso per il G500}
+
+Per concludere questa sezione, riportiamo in Figura (\ref{fig:es_9_bode_g500_strano_bi}) un grafico che mostra un andamento non conforme alle aspettative dove si compara il gain G500 misurato con un fondoscala \textsc{fin} sul VI di 0.5 V con quello misurato a 0.05 V.\\
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{./es_9_bode_g500_strano_bi}
+\caption{Andamento inaspettato per il G500 con fondoscala di ingresso della DAQ di 0.05 V vs 0.5 V}
+\label{fig:es_9_bode_g500_strano_bi}
+\end{figure}
+
+Una prima spiegazione che ci siamo dati è che, a causa dell'offset del generatore di funzioni, il segnale di ingresso (con $V_{pp} = 30 \si{mV}$) venisse shiftato in modo da risultare all'esterno della "maschera" vista dal canale CB68, e cioè $\pm 50 \si{mV}$. Tuttavia, questo avrebbe dovuto risultare in un'aumento sistematico del gain lungo tutto il range di frequenze eplorato, cosa che non si verifica.\\
+
+Una seconda, parziale, spiegazione consiste nel fatto che la scheda DAQ ha una certa velocità (finita) di switch fra i fondoscala dei canali in uso, e il risultato è che in certi casi il tempo di switch dei fondoscala sia maggiore dell'intervallo di campionamento, per cui un segnale di $V_{out}$ che sarebbe dovuto essere misurato con fondoscala 10V, viene effettivamente misurato a 5 V, saturando e abbassando il valore del gain. \\
+Per verificare questa teoria, sarebbe stato necessario avere accesso diretto ai valori letti dai canali CB68 e CB33, cosa che il VI non forniva, e in ogni caso è una spiegazione plausibile per le frequenze indicativamente minori di quella di taglio, in cui il gain è effettivamente minore di quello aspettato, ma non per quelle superiori, dove si inverte la tendenza.
+
+\section{Misura della larghezza di banda open-loop}
+
+Questa parte dell'esperienza è volta a misurare il gain open-loop del nostro op-amp, nominalmente di $200k$. Per fare ciò si introduce una resistenza di reazione particolarmente alta, in modo da introdurci il più possibile in regime di assenza di feedback, ottenuto al limite di $R_R \rightarrow \infty $  cioè eliminandola.\\
+Ovviamente, per essere capaci di apprezzare gain di quest'ordine, è necessario montare un partitore di tensione resistivo in uscita del generatore esterno, così da non saturare la \textsc{cb68} del DAQ. Infatti (\textsc{homework 6}) anche soltanto la presenza di un \textit{input offset voltage} nell'op-amp, grandezza che noi abbiamo misurato nella precedente esperienza e stimato intorno all'ordine del \si{mV}, venendo amplificata fino alle centinaia di \si{V}, porterebbe fuori scala l'integrato: sappiamo infatti che la tensione in uscita è sempre di qualche volt inferiore a quelle di alimentazione.\\
+
+
+Purtroppo, per questioni di tempo, e rallentati da alcune acquisizioni completamente saturate, non siamo riusciti a portare a termine questa sezione.
+
+
+
+% Now we need a bibliography:
+\begin{thebibliography}{5}
+
+	%Each item starts with a \bibitem{reference} command and the details thereafter.
+	\bibitem{HOP96} % Transaction paper
+	Datasheet, $\mu $A741 General-Purpose Operational Amplifiers. SLOS094E – NOVEMBER 1970  –REVISED JANUARY 2015.
+	\url{http://www.ti.com/lit/ds/symlink/ua741.pdf}
+
+	\bibitem{MJ06} % Conference paper
+	Product data sheet: 1N4148 High-speed diodes. NXP Semiconductors 2004 Aug 10.
+	\url{http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf}
+
+	\bibitem{MJH0} % Conference paper
+	Product data sheet: AD711 op-amp.
+	\url{http://www.analog.com/media/en/technical-documentation/data-sheets/AD711.pdf}
+	
+	\bibitem{JH06} % Conference paper
+	Product data sheet: OP27 op-amp.
+	\url{http://www.analog.com/media/en/technical-documentation/data-sheets/OP27.pdf}
+	
+	\bibitem{JH6} % Conference paper
+	Product data sheet: tl081 op-amp.
+	\url{http://www.ti.com/lit/ds/symlink/tl081.pdf}
+
+	\bibitem{M06} % Conference paper
+	Paul Horowitz, Winfield Hill - The Art of Electronics. Cambridge University Press (1989).
+	
+\end{thebibliography}
+
+% Your document ends here!
+\end{document}

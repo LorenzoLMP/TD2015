@@ -1,0 +1,119 @@
+%\documentclass[a4paper]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[italian]{babel}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{hyperref}
+%\usepackage{amsthm}
+%\usepackage{graphicx}
+\documentclass[journal, a4paper]{IEEEtran}
+\usepackage[italian]{babel}
+\usepackage{booktabs}
+\usepackage{siunitx}%Questo serve a caricare il pacchetto delle unità di misura del sistema internazionale%
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{url}
+\usepackage{amsmath}
+
+
+\usepackage{keyval}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{authblk}
+
+
+\begin{document}
+
+% Define document title and author
+	\title{Tecnologie Digitali - Logbook Week 1}
+	\author[1]{Salvatore Bottaro}
+		\author[2]{Lorenzo M. Perrone}
+		\affil[1]{\texttt{email@sa.com}}
+		\affil[2]{\texttt{lorenzo.perrone.lmp@gmail.com}}
+	\markboth{Tecnologie Digitali - Di Lieto}{}
+	\maketitle
+	
+\begin{abstract}
+	Logbook di laboratorio di Tecnologie Digitali, a.a. 2015/2016. Week 1.
+\end{abstract}
+
+\section{Lezione 28/09/2015}
+Abbiamo misurato la d.d.p. $V_{out}$ ai capi della resistenza $R_2$ di un partitore di tensione secondo il seguente schema circuitale:\\
+
+\begin{circuitikz}
+\centering
+\draw (0 ,0) node[anchor=east] {$V_{in}$};
+\draw (0 ,0) to[short](1.5,0);
+\draw (1.5,0) to[R,l^=$R_1$](1.5, -1.5);
+\draw (1.5, -1.5) to[short, o-](3, -1.5);
+\draw (3, -1.5) node[anchor=west] {$V_{out}$};
+\draw (1.5, -1.5) to[R,l^=$R_2$](1.5, -3);
+\node[ground]at (1.5 , -3){};
+\end{circuitikz}
+
+
+dove $V_{in}$ è la tensione in ingresso.\\
+Sia il segnale in ingresso che l'analisi del segnale in uscita sono stati ottenuti per mezzo del VI \textit{inserire nome VI} composto da tre pannels. Il primo pannel contiene una copia del VI \textit{inserire nome VI} che genera segnali su un fondoscala di 10 V con profondità digitale di 12 bit (dunque con una risoluzione di 5 mV)
+%inserire le altre caratteristiche del segnale
+,il secondo pannel contiene un VI(?) per ritardare di qualche ms l'acquisizione del segnale in uscita rispetto all'istante in cui viene generato il segnale in ingresso, il terzo pannel contiene il VI per l'analisi del segnale in uscita e che restituisce sul front pannel il valor medio sui campionamenti effettuati 
+%inserire dettagli
+e relativa deviazione standard.\\
+Il circuito è stato realizzato sulla breadboard come nell'immagine:
+\begin{figure}[htp]
+\centering
+
+%\includegraphics[scale=.14]{circuito}
+
+\caption{Circuito su breadboard realizzato in laboratorio}
+\end{figure}
+
+Sono state scelte resistenze $R_1 = 22 ~ k\Omega \pm 10 \%$ e $R_2 = 220~ k\Omega \pm 10 \%$, scelte in modo da garantire che la corrente nel circuito fosse dell'ordine del $\mu$A. Il cavo per la terra è stato collegato alla CB29 della \textit{scheda verde}, il cavo in $V_{in}$ alla CB22, analog output 0 della scheda di acquisizione, mentre il cavo in $V_{out}$ alla CB68, analog input 0 della scheda. Abbiamo scelto $V_{in} = 2.75 V$, dopodiché prima di collegare la breadboard alla scheda abbiamo verificato il corretto funzionamento della scheda collegando il CB22 al CB68 e avviando il VI. Il valore restituito è stato $V_{out} = 2.749 V \pm 0.001 V$ che garantisce il corretto funzionamento della scheda. Abbiamo infine collegato la scheda al circuito e avviato il VI. Il valore atteso si ottiene da:
+\begin{equation}
+V_{out}^{att}= \frac{V_{in}}{1+\frac{R_1}{R_2}}
+\end{equation}
+da cui, per la scelta delle resistenze, $V_{out}^{att} = 2.5 V \pm 20 \%$. Il valore registrato è stato $V_{out} = 2.502 V \pm 0.002 V$. Abbiamo scambiato il cavo per la CB29 con quello della CB22, scambiando così i ruoli delle resistenze. In tal caso si ha $V_{out}^{att} = 0.25~ V \pm 20 \%$ mentre quello registrato $V_{out} = 0.244 ~V \pm 0.001 ~V$.
+
+\section{Lezione 29/09/2015}
+Durante la lezione odierna, abbiamo iniziato a lavorare con il software TINA, un simulatore analogico SPICE-Based prodotto dalla \textit{Texas Instruments}. Tramite TINA è possibile analizzare il comportamento di circuiti più o meno complessi, potendo inserire numerosi componenti circuitali di cui settare i valori. \\
+In primo luogo è stato riprodotto il circuito impiegato nella lezione precedente e analizzato in continua per verificare che i valori da noi trovati fossero compatibili con quelli teorici previsti da TINA, usando la funzione \textsc{dc transfer characteristic}.
+Quindi, abbiamo spostato la nostra attenzione sui circuiti in alternata (vedi Figura ASSAAAA), per i quali è possibile determinare una \textit{funzione di trasferimento} $V_{out} = f(V_{in})$, dove $V_{in}$ è la tensione (alternata) fornita in ingresso, e $V_{out}$ quella in uscita.
+I circuiti che esamineremo prevalentemente saranno di tipo \textit{lineare}, dove è possibile stabilire una relazione fra $V_{in}$ e $V_{out}$ come segue:
+
+\begin{equation}
+V_{out}(\omega)= H(\omega)V_{in}(\omega)
+\end{equation}
+
+\section{Conclusion}
+	This section summarizes the paper.
+
+% Now we need a bibliography:
+\begin{thebibliography}{5}
+
+	%Each item starts with a \bibitem{reference} command and the details thereafter.
+	\bibitem{HOP96} % Transaction paper
+	J.~Hagenauer, E.~Offer, and L.~Papke. Iterative decoding of binary block
+	and convolutional codes. {\em IEEE Trans. Inform. Theory},
+	vol.~42, no.~2, pp.~429–-445, Mar. 1996.
+
+	\bibitem{MJH06} % Conference paper
+	T.~Mayer, H.~Jenkac, and J.~Hagenauer. Turbo base-station cooperation for intercell interference cancellation. {\em IEEE Int. Conf. Commun. (ICC)}, Istanbul, Turkey, pp.~356--361, June 2006.
+
+	\bibitem{Proakis} % Book
+	J.~G.~Proakis. {\em Digital Communications}. McGraw-Hill Book Co.,
+	New York, USA, 3rd edition, 1995.
+
+	\bibitem{talk} % Web document
+	F.~R.~Kschischang. Giving a talk: Guidelines for the Preparation and Presentation of Technical Seminars.
+	\url{http://www.comm.toronto.edu/frank/guide/guide.pdf}.
+
+	\bibitem{5}
+	IEEE Transactions \LaTeX and Microsoft Word Style Files.
+	\url{http://www.ieee.org/web/publications/authors/transjnl/index.html}
+
+\end{thebibliography}
+
+% Your document ends here!
+\end{document}

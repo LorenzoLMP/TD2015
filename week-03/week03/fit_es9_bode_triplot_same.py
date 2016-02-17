@@ -1,0 +1,146 @@
+from pylab import *  
+from scipy import * 
+from scipy import optimize
+from scipy import misc
+
+data = genfromtxt('es8_0_1')
+
+f = data[:,0]
+guad = data[:,1]
+sfasa = data[:,2]
+
+xdata = f
+ydata = guad
+zdata = sfasa
+#sigmax = data [:,3]
+#sigmay = data [:,4]
+
+#########################################
+
+sigmay = []
+i = 0
+while i < len(ydata):
+        t = max(0.1/100, 2*sqrt(2)*0.002)
+        w = sqrt( t**2 + 0.005/(ydata[i]*0.1) )
+        sigmay.append(w)
+        i = i+1
+
+sigmay = array(sigmay)
+
+
+sigmax = []
+i = 0
+while i < len(xdata):
+        s = max(0.040, xdata[i]*5*10**(-5))
+        sigmax.append(s)
+        i = i +1
+sigmax = array(sigmax)
+
+##############################################
+
+rc('font', size=15)
+#xlabel(r'$frequenza [Hz]$')
+#ylabel(r'$Gain $')
+minorticks_on()
+
+#Attivare per scala bilog
+#xscale('log')
+#yscale('log')
+#xlim(80,30000)
+#ylim(35,103)
+
+############################################################
+#Parte per plot dati
+#grid('on', which = "both")
+#title("Bode Diagram Gain-Phase", size = 15)
+#plot(xdata, ydata, linestyle="None",marker=".", color="black", markersize= 10)
+
+
+
+
+title("Bode Diagram Gain-Phase same graphic", size = 15)
+errorbar(xdata, ydata, sigmay, sigmax,  linestyle="None", color="red")
+xscale('log')
+yscale('log')
+xlim(80,25000)
+ylim(30,700)
+ylabel(r'$Gain $')
+grid('on', which = "both")
+
+
+
+
+################################################################
+data = genfromtxt('es9_300')
+
+f2 = data[:,0]
+guad2 = data[:,1]
+
+
+xdata2 = f2
+ydata2 = guad2
+
+sigmay2 = []
+i = 0
+while i < len(ydata2):
+        t = max(0.05/100, 2*sqrt(2)*0.002)
+        w = sqrt( t**2 + 0.005/(ydata2[i]*0.1) )
+        sigmay2.append(w)
+        i = i+1
+
+sigmay2 = array(sigmay2)
+
+
+sigmax2 = []
+i = 0
+while i < len(xdata2):
+        s = max(0.040, xdata2[i]*5*10**(-5))
+        sigmax2.append(s)
+        i = i +1
+sigmax2 = array(sigmax2)
+
+
+errorbar(xdata2, ydata2, sigmay2, sigmax2, linestyle="None", color="black")
+#errorbar(xdata, zdata,  linestyle="None", color="black")
+
+######################################################################
+
+
+data = genfromtxt('es9_500_buono')
+
+f3 = data[:,0]
+guad3 = data[:,1]
+
+
+xdata3 = f3
+ydata3 = guad3
+
+sigmay3 = []
+i = 0
+while i < len(ydata3):
+        t = max(0.03/100, 2*sqrt(2)*0.002)
+        w = sqrt( t**2 + 0.005/(ydata3[i]*0.1) )
+        sigmay3.append(w)
+        i = i+1
+
+sigmay3 = array(sigmay3)
+
+
+sigmax3 = []
+i = 0
+while i < len(xdata3):
+        s = max(0.040, xdata3[i]*5*10**(-5))
+        sigmax3.append(s)
+        i = i +1
+sigmax3 = array(sigmax3)
+
+errorbar(xdata3, ydata3, sigmay3, sigmax3, linestyle="None", color="blue")
+#errorbar(xdata, zdata,  linestyle="None", color="black")
+
+xlabel(r'$frequenza [Hz]$')
+
+
+
+
+savefig('es_9_bode_triplot_same.png', dpi=400)
+show()

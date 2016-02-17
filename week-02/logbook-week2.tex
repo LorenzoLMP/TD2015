@@ -213,7 +213,7 @@ Tuttavia, per curiosità abbiamo provato a mettere una resistenza $R_{gen} = 2M\
 E' evidente che il valore di  $R_{gen} = 2M\si{Ohm} $ è dello stesso ordine della resistenza in ingresso dell'operazionale, e per questo motivo le assunzioni sull' \textit{op-amp} ideale non sono più completamente valide. \\
 
 A questo punto risulta necessario valutare direttamente gli offset interni, ponendo a massa entrambi gli ingressi \textsc{in+} e \textsc{in-}, ed effettuando delle acquisizioni per diversi valori della resistenza $R_2$. Come metodo operativo, abbiamo effettuato rilevazioni con 5 diverse resistenze, e per ciascuna resistenza sono stati presi 7 valori di $V_{out}$, di cui è stata effettuata la media aritmetica e il calcolo della varianza. \\
-Questi dati sono stati plottati in un grafico $V_{offset} - R_2$, riportato in Figura (\ref{fig:fit_offset}).\\
+Questi dati sono stati plottati in un grafico $V_{out} - R_2$, riportato in Figura (\ref{fig:fit_offset}).\\
 
 
 \begin{figure}
@@ -225,7 +225,7 @@ Questi dati sono stati plottati in un grafico $V_{offset} - R_2$, riportato in F
 
 La funzione di \textit{best-fit} proposta è ovviamente lineare, che in un grafico con scala delle x logaritmica risulta visivamente in un'esponenziale. E' evidente che l'offset dell'operazionale, con ingressi a massa, viene amplificato linearmente con il crescere della resistenza $R_2$, a $R_1 = $ fissata.\\
 
-Per questo motivo probabilmente è possibile interpretare il valore dell'intercetta restituito dal fit come l'offset interno a resistenza di carico ($R_2$) zero. Tale valore sarebbe di $-2.0 \pm 0.1 \mu \si{V} $. 
+Per questo motivo probabilmente è possibile interpretare il valore dell'intercetta restituito dal fit come l'offset interno a resistenza di carico ($R_2$) zero. Tale valore sarebbe di $-2.0 \pm 0.1 \mu \si{V} $. Nonostante il procedimento sia stato impiegato con successo anche da altri gruppi, e commentato positivamente con il professore, il risultato del fit è chiaramente di diversi ordini di grandezza inferiore al valore dell'offset aspettato (nel \textit{datasheet} viene riportato un valore tipico del \si{mV}). Il motivo di questa discrepanza non è ancora chiaro: sarà utile confrontare le singole acquisizioni di tensione a resistenza $R_2$ fissa con degli analoghi dati di altri gruppi.
 
 
 \section{Op-amp in configurazione follower}
@@ -304,7 +304,7 @@ $R_g (M\Omega)$ & G (-$\frac{R_2}{R_1}$) & Offset (V) \\
 \end{tabular} 
 \end{center}
 ~\\
-La ragione di tale andamento è da imputarsi al fatto che per questi valori di resistenza, confrontabili con la resistenza in ingresso all'opamp, vengano meno le regole d'oro dell'opamp stesso, tuttavia non si sa in che senso tali regole non siano più valide.\\
+La ragione di tale andamento è da imputarsi al fatto che per questi valori di resistenza, confrontabili con la resistenza in ingresso all'opamp, vengano meno le regole d'oro dell'opamp stesso.\\
 
 \section{Amplificatore di corrente}
 
@@ -358,7 +358,7 @@ I grafici ottenuti sono in Figura (\ref{gen_rel}) e (\ref{gen_id}) :\\
 \label{gen_id}
 \end{figure}
 
-In entrambi i casi l'andamento è lineare fino $I\approx 1~\mu A$, con pendenza, stimata prendendo 2 punti e calcolandone il rapporto incrementale, di 5.008 $M\Omega$ nel caso reale, 4.997 $M\Omega$ nel caso ideale, per cui in questo intervallo il circuito risponde come previsto. Per correnti superiori invece già nella simulazione si vede il limite dell'opamp reale. Infatti se si tracciano le d.d.p. ai capi della resistenza e del generatore di corrente, supposto direttamente reale, tramite il circuito di TINA in Figura (\ref{circuito_tina}):
+In entrambi i casi l'andamento è lineare fino $I\approx 2~\mu A$, con pendenza, stimata prendendo 2 punti e calcolandone il rapporto incrementale, di 5.008 $M\Omega$ nel caso reale, 4.997 $M\Omega$ nel caso ideale, per cui in questo intervallo il circuito risponde come previsto. Per correnti superiori invece già nella simulazione si vede il limite dell'opamp reale. Infatti se si tracciano le d.d.p. ai capi della resistenza e del generatore di corrente, supposto direttamente reale, tramite il circuito di TINA in Figura (\ref{circuito_tina}):
 
 
 \begin{figure}[htp]
@@ -372,13 +372,13 @@ Si ottiene quindi il grafico in Figura \ref{graf_tens}:\\
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=.5]{immagine3}
+\includegraphics[scale=.4]{immagine3}
 \caption{Grafico delle tensioni ai capi del generatore di corrente ($V_A$), della resistenza ($V_R$) e di $V_{out}$\\}
 \label{graf_tens}
 \end{figure}
 
 
-Si vede come fino a $I\approx 1~\mu A$, la regola della massa virtuale sia rispettata, in quanto ai capi del generatore di corrente la d.d.p. è nulla, per cui anche agli ingressi dell'op amp, e in tale intervallo $V_R$ aumenta secondo quanto previsto. Per $I\geq 1 \mu A$ invece la seconda regola d'oro dell'op amp non è più valida e inizia a scorrere corrente dentro l'op amp, giustificando il grafico di $V_R$, in modo tale da mantenere un $V_{out}$ costante, anche se non è chiaro il motivo di quest'ultima caratteristica.\\
+Si vede come fino a $I\approx 2~\mu A$, la regola della massa virtuale sia rispettata, in quanto ai capi del generatore di corrente la d.d.p. è nulla, per cui anche agli ingressi dell'op amp, e in tale intervallo $V_R$ aumenta secondo quanto previsto. Per $I\geq 2 \mu A$ invece la seconda regola d'oro dell'op amp non è più valida e inizia a scorrere corrente dentro l'op amp, giustificando il grafico di $V_R$, in modo tale da mantenere un $V_{out}$ costante, anche se non è chiaro il motivo di quest'ultima caratteristica.\\
 
 Si è applicato l'op amp come \textit{transresistance amplifier} per misurare la corrente di saturazione inversa di un diodo. Abbiamo usato il diodo 1N4148 della NXP semiconductors. Dal datasheet disponibile sul sito \url{www.nxp.com} abbiamo ricavato le informazioni per posizionare correttamente il diodo (vedi Figura (\ref{diodo})).
 
@@ -389,6 +389,7 @@ Si è applicato l'op amp come \textit{transresistance amplifier} per misurare la
 \label{diodo}
 \end{figure}
 
+\subsection{Homework 4}
 
 Sul datasheet si legge che:
 
@@ -401,7 +402,7 @@ Sul datasheet si legge che:
 \item vi sono grafici relativi all'andamento della corrente massima in funzione della temperatura, curva caratteristica a varie temperature, reverse current in funzione della temperatura e capacità del diodo in termini di tensione di polarizzazione inversa.\\
 \end{itemize}
 
-Altre informazioni risultano poo chiare come il significato di reverse peak current o voltage e relativi grafici o recovery voltage.\\
+Altre informazioni risultano poco chiare come il significato di reverse peak current o voltage e relativi grafici o recovery voltage.\\
 Abbiamo realizzato sulla breadboard il circuito di Figura (\ref{op-diod}):\\
 
 \begin{figure}[htp]
@@ -411,7 +412,7 @@ Abbiamo realizzato sulla breadboard il circuito di Figura (\ref{op-diod}):\\
 \includegraphics[scale=.4]{diodo}
 \end{figure}
 
-Come resistenza abbiamo impiegato un parallelo di due resistenze da 10 $M\omega$. Abbiamo esplorato un intervallo di 10 V a partire da 0 V. I dati restituiti sono raccolti nel grafico (\ref{plotdiodosil}):\\
+Come resistenza abbiamo impiegato un parallelo di due resistenze da 10 $M\omega$. Abbiamo esplorato un intervallo di 10 V a partire da 0 V. I dati restituiti sono raccolti nel Grafico (\ref{plotdiodosil}):\\
 
 \begin{figure}[htp]
 \caption{}
@@ -420,7 +421,7 @@ Come resistenza abbiamo impiegato un parallelo di due resistenze da 10 $M\omega$
 \includegraphics[scale=.35]{plotdiodosil}
 \end{figure}
 
-Si nota subito come $V_{out}$ sia costantemente positivo, mentre ci si aspettava una tensione negativa. Ciò lo si può imputare alle condizioni non ideali di lavoro dell'op amp. Infatti per $V_{in} = 0$ V si osserva una tensione $V_{in} = (0.1009 \pm 0.003)$ mV, anziché 0. Abbiamo sostituito il diodo con una resistenza da 10 $M\Omega$ e riavviato l'acquisizione cambiando l'intervallo di tensione in (-1 V, 1 V). I dati ottenuti sono plottati in (\ref{plotdiodores}):\\
+Si nota subito come $V_{out}$ sia costantemente positivo, mentre ci si aspettava una tensione negativa. Ciò lo si può imputare alle condizioni non ideali di lavoro dell'op amp. Infatti per $V_{in} = 0$ V si osserva una tensione $V_{in} = (0.1009 \pm 0.003)$ mV, anziché 0. Abbiamo sostituito il diodo con una resistenza da 10 $M\Omega$ e riavviato l'acquisizione cambiando l'intervallo di tensione in (-1 V, 1 V). I dati ottenuti sono plottati in Figura (\ref{plotdiodores}):\\
 
 \begin{figure}[htp]
 \caption{}
@@ -440,6 +441,8 @@ Dal confronto fra questo grafico e il grafico precedente si può dedurre che nat
 
 Un altro aspetto notevole è il fatto che il diodo non arriva mai a saturazione nell'intervallo considerato, in quanto anziché osservare un andamento costante se ne osserva uno lineare, anche se non è chiaro se ciò è dovuto solamente al comportamento reale del diodo o anche all'interazione con l'op amp.\\
 Si può dedurre il valore della corrente di saturazione media ad esempio prendendo i dati nella regione ad andamento lineare e facendone media e scarto quadratico medio della media. Il risultato ottenuto è $I_r = (10.2 \pm 1.2)$ nA, in accordo con quanto si legge nel datasheet.\\
+
+\subsection{Homework 5}
 
 Per quanto riguarda il diodo 1N4148, TINA fornisce i 19 parametri di Figura (\ref{dati_Tina}):\\
 
@@ -464,6 +467,30 @@ Dopo il diodo al silicio abbiamo impiegato il diodo al germanio OA95, che rispet
 
 Si nota un andamento identico rispetto al diodo al silicio, per cui entro 10 V neanche il diodo al germanio raggiunge la saturazione. Tuttavia rispetto al diodo 1N4148, l'offset è notevolmente ridotto a (0.0264 $\pm$ 0.0003) V, questo perché si è abbassata sia la resistenza di carico sia quella del diodo che fa passare più corrente. Dunque il comportamento dell'op amp in questo caso è più vicino a quello ideale, il che suggerisce che il fatto che il diodo non raggiunga la saturazione neanche in questo caso si possa imputare principalmente al comportamento reale del diodo. Per la corrente di saturazione media, procedendo come prima si ottiene $I_r = (6.5 \pm 0.7) \mu A$, maggiore di un fattore 600 rispetto al precedente con il diodo al silicio.
 
+\section{Appendice: valori tipici elettrici e costruttivi di alcuni op-amp}
+
+\subsection{Homework 2-3}
+
+Data l'estrema varietà di \textit{op-amp} diffusi in commercio, si riportano di seguito in tabella alcuni valori tipici e parametri costruttivi dei modelli \textsc{ad711, op27, tl081}, confrontandoli con il \textsc{$\mu$ a741}.\\
+
+L'\textit{Horowitz} riporta, inoltre, diverse categorie in cui vengono suddivisi gli \textit{op-amp}. Fra questi ritroviamo gli operazionali \textsc{bipolar} \textbf{precision}, \textbf{low-bias}, \textbf{single-supply}, \textbf{single-supply precision}, \textbf{high-speed}; quelli \textsc{jfet} : \textbf{precision}, \textbf{high-speed}; i \textbf{mosfet} e altri ancora.\\
+
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline  & \textbf{\textsc{ $\mu $a741}} & \textbf{\textsc{ad711}} & \textbf{\textsc{op27}} & \textbf{\textsc{tl081}} \\ 
+\hline Supply voltage $V_{CC-}$ & -18 V & -18 V & -22 V & -18 V \\ 
+\hline Supply voltage $V_{CC+}$ & +18 V & +18 V & +22 V & +18 V \\ 
+\hline Differential Input voltage & $ \pm 15 \si{V}$ &$ \pm 20 \si{V}$ & $\pm 0.7 \si{V}$ & $\pm 30 \si{V}$ \\ 
+\hline Input offset current & 20 nA & 10 pA & 7 nA & 5-100 pA \\ 
+\hline Input resistance & 2 \si{MOhm} & $3*10^6 \si{MOhm} $ & 6 \si{MOhm} & $1*10^6 \si{MOhm}$ \\ 
+\hline Output resistance & 75 \si{Ohm} & $10^{-2}-10^2  \si{Ohm} $& 70 \si{Ohm} & / \\ 
+\hline Input capacitance & 1.4 \si{pF} & 5.5 \si{pF} & 8 \si{pF} & / \\ 
+\hline Input offset voltage & $1-7.5 \si{mV}$ & $0.1-0.25 \si{mV} $ & $10 \mu\si{V} $ & $5-20 \si{mV} $ \\
+\hline Gain & $2*10^5$ & $4*10^5$ & $1.8*10^6 $ & (?) \\
+ 
+\hline 
+\end{tabular} 
+
 
 % Now we need a bibliography:
 \begin{thebibliography}{5}
@@ -473,11 +500,25 @@ Si nota un andamento identico rispetto al diodo al silicio, per cui entro 10 V n
 	Datasheet, $\mu $A741 General-Purpose Operational Amplifiers. SLOS094E – NOVEMBER 1970  –REVISED JANUARY 2015.
 	\url{http://www.ti.com/lit/ds/symlink/ua741.pdf}
 
-	\bibitem{MJH06} % Conference paper
+	\bibitem{MJ06} % Conference paper
 	Product data sheet: 1N4148 High-speed diodes. NXP Semiconductors 2004 Aug 10.
 	\url{http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf}
 
+	\bibitem{MJH0} % Conference paper
+	Product data sheet: AD711 op-amp.
+	\url{http://www.analog.com/media/en/technical-documentation/data-sheets/AD711.pdf}
+	
+	\bibitem{JH06} % Conference paper
+	Product data sheet: OP27 op-amp.
+	\url{http://www.analog.com/media/en/technical-documentation/data-sheets/OP27.pdf}
+	
+	\bibitem{JH6} % Conference paper
+	Product data sheet: tl081 op-amp.
+	\url{http://www.ti.com/lit/ds/symlink/tl081.pdf}
 
+	\bibitem{M06} % Conference paper
+	Paul Horowitz, Winfield Hill - The Art of Electronics. Cambridge University Press (1989).
+	
 \end{thebibliography}
 
 % Your document ends here!

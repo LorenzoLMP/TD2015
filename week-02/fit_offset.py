@@ -44,7 +44,7 @@ p0 = [0.005 , 0.1] #metti il valore inizialeee
 
 rc('font', size=16)
 xlabel(r'$Resistenze R_{2} [k\Omega]$')
-ylabel(r'$V_{off} [mV] $')
+ylabel(r'$V_{out} [mV] $')
 minorticks_on()
 
 #Attivare per scala bilog
@@ -109,7 +109,7 @@ text(xdata.max()*0.0001, ydata.max()*1.3, degfreedom, family='serif', style='ita
 text(xdata.max()*0.0001, ydata.max()*0.9, pendenza, family='serif', style='italic', size=15)
 text(xdata.max()*0.0001, ydata.max()*0.70, intercetta, family='serif', style='italic', size=15)
 
-title("Offset Voff:R2 - fit (scala semilogx)") 
+title("Offset Vout:R2 - fit (scala semilogx)") 
 
 ax = axes()
 savefig('fit_offset.png', dpi=400) 
