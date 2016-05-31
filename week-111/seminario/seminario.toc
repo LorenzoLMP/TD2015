@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {italian}
+\beamer@sectionintoc {1}{Misuratore digitale: APDS-9301}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Caratterizzazione del dispositivo}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Prime misure}{9}{0}{1}
+\beamer@sectionintoc {2}{Misuratore analogico: WS-7.56-TO5}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{Caratterizzazione del dispositivo}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Caratterizzazione di un LED}{24}{0}{2}
+\beamer@sectionintoc {3}{Applicazione: lunghezze d'onda e triplette RGB}{31}{0}{3}
+\beamer@subsectionintoc {3}{1}{Prova APDS-9301}{31}{0}{3}
+\beamer@subsectionintoc {3}{2}{Colori RGB: WS-7.56-TO5}{40}{0}{3}
